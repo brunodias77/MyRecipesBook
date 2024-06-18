@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MRB.Domain.Repositories;
+using MRB.Domain.Security;
 using MRB.Infra.Data;
 using MRB.Infra.Data.Repositories;
 
@@ -62,6 +63,8 @@ public static class DependencyInjectionExtension
 
     private static void AddPasswordEncrypter(IServiceCollection services, IConfiguration configuration)
     {
+        services.AddScoped<IPasswordEncripter, Security.BCrypt>();
+
         // var additionalKey = configuration.GetValue<string>("Settings:Password:AdditionalKey");
         // services.AddScoped<IPasswordEncripter>(options => new Sha512Encript(additionalKey!));
     }

@@ -10,3 +10,15 @@
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/refint/MRB.Communication.dll
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.pdb
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/ref/MRB.Communication.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.deps.json
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.pdb
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfoInputs.cache
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfo.cs
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CoreCompileInputs.cache
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.sourcelink.json
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/refint/MRB.Communication.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.pdb
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/ref/MRB.Communication.dll

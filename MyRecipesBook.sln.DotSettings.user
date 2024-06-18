@@ -2,5 +2,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=be637cd7_002D8673_002D47f7_002Db744_002Dbcf29b879ba2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SUCESSO" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::D3017DDA-3CBF-408C-BF39-185310A04817::net8.0::MRB.WebApiTest.Users.Register.RegisterUserIntegrationTest.SUCESSO&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::D3017DDA-3CBF-408C-BF39-185310A04817::net8.0::MRB.WebApiTest.Users.GetAll.GetAllUsersIntegrationTest.SUCESSO&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

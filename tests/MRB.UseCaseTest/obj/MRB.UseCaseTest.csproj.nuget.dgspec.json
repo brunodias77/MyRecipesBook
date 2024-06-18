@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj": {}
+    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj": {}
   },
   "projects": {
-    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj": {
+    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj",
+        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj",
         "projectName": "MRB.UseCaseTest",
-        "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj",
-        "packagesPath": "/home/brunodias/.nuget/packages/",
-        "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/obj/",
+        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj",
+        "packagesPath": "/home/bruno-dias/.nuget/packages/",
+        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/brunodias/.nuget/NuGet/NuGet.Config"
+          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

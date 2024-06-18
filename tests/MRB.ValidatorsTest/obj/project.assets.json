@@ -986,19 +986,19 @@
     ]
   },
   "packageFolders": {
-    "/home/brunodias/.nuget/packages/": {}
+    "/home/bruno-dias/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
+      "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
       "projectName": "MRB.ValidatorsTest",
-      "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
-      "packagesPath": "/home/brunodias/.nuget/packages/",
-      "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/obj/",
+      "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
+      "packagesPath": "/home/bruno-dias/.nuget/packages/",
+      "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/brunodias/.nuget/NuGet/NuGet.Config"
+        "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

@@ -10,3 +10,15 @@
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/refint/MRB.Exceptions.dll
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.pdb
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/ref/MRB.Exceptions.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/bin/Debug/net8.0/MRB.Exceptions.deps.json
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/bin/Debug/net8.0/MRB.Exceptions.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/bin/Debug/net8.0/MRB.Exceptions.pdb
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.AssemblyInfoInputs.cache
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.AssemblyInfo.cs
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.csproj.CoreCompileInputs.cache
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.sourcelink.json
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/refint/MRB.Exceptions.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.pdb
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/ref/MRB.Exceptions.dll

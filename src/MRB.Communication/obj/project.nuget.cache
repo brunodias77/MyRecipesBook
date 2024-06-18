@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8PuQt7oOQPAQ3KJOj2niAWLkFBegrwLr8G2xV7x5mB40Tr4lZqAqecqEmn26XXiOlDzvZ1eTbkZLfydvOJX9Ow==",
+  "dgSpecHash": "WPNxdc5HR95nbvnLlyt3+b9/obqpVAtMjX6878Y0PBHFoBmj8b4LRxJnvHkbr2DfLJLp1lUY7+FezHRU3CInhA==",
   "success": true,
-  "projectFilePath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
+  "projectFilePath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

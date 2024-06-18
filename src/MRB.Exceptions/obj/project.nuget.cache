@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DaiVH5x1PtFWlrex86iDH6vQjNVvZe+LdURXclfWTHRAV2OpLYJTd8EsjQjiQ/J+nT10GjXn9tOY0L0g5hMbdg==",
+  "dgSpecHash": "gNVN8ZriAQC4hZFL9sfyTU6b4xAlv8yydrRLjznb5y1IvQt7Dqrl/QyS3i9PD045cWA73f5ngYp7N/X2+2Yc3w==",
   "success": true,
-  "projectFilePath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
+  "projectFilePath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

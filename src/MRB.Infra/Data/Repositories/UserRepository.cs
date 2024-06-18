@@ -23,4 +23,9 @@ public class UserRepository : IUserRepository
         await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
     }
+
+    public async Task<bool> ExistActiveUserWithIdentifier(Guid userId)
+    {
+        return await _context.Users.AnyAsync(user => user.Id.Equals(userId) && user.Active);
+    }
 }
