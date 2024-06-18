@@ -1,0 +1,12 @@
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.deps.json
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfoInputs.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfo.cs
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CoreCompileInputs.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.sourcelink.json
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/refint/MRB.Communication.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/ref/MRB.Communication.dll

@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "zImFzbWii1LLwuKav3/xtK92Lz6ri7l4vZgGA2+J7AiSC1NZP8HRPZmseG2wRHd08faZ03l8MfZpVQDyY9rY8Q==",
+  "dgSpecHash": "K6iglgpYucp207PNbajFLWT2nCfYvMsQ5Z7qNyuNqSV/OfFgHfxGDoKrS82dxzPzFaZWvMJLwRVIXeVn9dC3WA==",
   "success": true,
   "projectFilePath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/brunodias/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.configuration.binder/8.0.1/microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/home/brunodias/.nuget/packages/sqids/3.1.0/sqids.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

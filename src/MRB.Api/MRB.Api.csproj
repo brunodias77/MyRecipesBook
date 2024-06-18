@@ -10,4 +10,11 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MRB.Application\MRB.Application.csproj" />
+      <ProjectReference Include="..\MRB.Communication\MRB.Communication.csproj" />
+      <ProjectReference Include="..\MRB.Exceptions\MRB.Exceptions.csproj" />
+      <ProjectReference Include="..\MRB.Infra\MRB.Infra.csproj" />
+    </ItemGroup>
+
 </Project>

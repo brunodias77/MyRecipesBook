@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yWuLK034K1xGzOMOGfg5R39dDEfgdTDaQOSz57y/HUFk+q6sLoiZYo7CtjDHeOaZZ3E9hdaXvjveQhtr956kNA==",
+  "success": true,
+  "projectFilePath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+  "expectedPackageFiles": [
+    "/home/brunodias/.nuget/packages/bogus/35.5.1/bogus.35.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

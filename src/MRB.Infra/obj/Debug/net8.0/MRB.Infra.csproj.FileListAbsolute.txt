@@ -1,0 +1,16 @@
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/MRB.Infra.deps.json
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/MRB.Infra.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/MRB.Infra.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/MRB.Domain.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/MRB.Domain.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.csproj.AssemblyReference.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.AssemblyInfoInputs.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.AssemblyInfo.cs
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.csproj.CoreCompileInputs.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.sourcelink.json
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.csproj.CopyComplete
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/refint/MRB.Infra.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/ref/MRB.Infra.dll

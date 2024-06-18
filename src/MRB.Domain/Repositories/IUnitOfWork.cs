@@ -1,6 +1,8 @@
 namespace MRB.Domain.Repositories;
 
-public class IUnitOfWork
+public interface IUnitOfWork
 {
-    
+    Task<int> CompleteAsync();
+    Task BeginTransactionAsync();
+    Task CommitAsync();
 }

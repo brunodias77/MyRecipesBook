@@ -1,0 +1,180 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {}
+  },
+  "projects": {
+    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
+        "projectName": "MRB.Communication",
+        "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
+        "packagesPath": "/home/brunodias/.nuget/packages/",
+        "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/brunodias/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+        "projectName": "MRB.Domain",
+        "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+        "packagesPath": "/home/brunodias/.nuget/packages/",
+        "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/brunodias/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+        "projectName": "MRB.CommonTest",
+        "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+        "packagesPath": "/home/brunodias/.nuget/packages/",
+        "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/brunodias/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+                "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
+              },
+              "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+                "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
