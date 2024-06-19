@@ -38,3 +38,7 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Domain.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.AssemblyReference.cache
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Comm.36159507.Up2Date
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Domain.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Domain.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.AssemblyReference.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CopyComplete

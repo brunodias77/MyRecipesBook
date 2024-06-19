@@ -1,6 +1,7 @@
 using Microsoft.OpenApi.Models;
 using MRB.Api.Converters;
 using MRB.Api.Filters;
+using MRB.Api.Middlewares;
 using MRB.Application.Configurations;
 using MRB.Infra.Configurations;
 using MRB.Infra.Extensions;
@@ -56,6 +57,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<CultureMiddleware>();
 
 app.UseHttpsRedirection();
 

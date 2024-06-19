@@ -29,6 +29,14 @@ public class UserRepositoryBuilder
         return this;
     }
 
+    public UserRepositoryBuilder GetUserByEmail(User user)
+    {
+        repository.Setup(userRepository => userRepository.GetUserByEmail(user.Email)).ReturnsAsync(user);
+
+        return this;
+    }
+
+
     public IUserRepository Build()
     {
         return repository.Object;

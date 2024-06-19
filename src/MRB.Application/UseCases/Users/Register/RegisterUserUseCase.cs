@@ -35,10 +35,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         var user = _mapper.Map<User>(request);
         user.Password = _passwordEncripter.Encrypt(request.Password);
         var token = _accessTokenGenerator.Generate(user.Id);
-        await _unitOfWork.BeginTransactionAsync();
         await _userRepository.AddAsync(user);
-        await _unitOfWork.CompleteAsync();
-        await _unitOfWork.CommitAsync();
         var response = new ResponseRegisterUserJson
         {
             Name = user.Name,

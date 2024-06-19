@@ -59,3 +59,10 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Infra.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Exceptions.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Application.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Exceptions.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Infra.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Application.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Infra.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Exceptions.pdb
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll

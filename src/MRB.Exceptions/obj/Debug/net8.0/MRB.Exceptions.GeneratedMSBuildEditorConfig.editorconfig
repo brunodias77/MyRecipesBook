@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MRB.Exceptions
-build_property.ProjectDir = /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/
+build_property.ProjectDir = /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

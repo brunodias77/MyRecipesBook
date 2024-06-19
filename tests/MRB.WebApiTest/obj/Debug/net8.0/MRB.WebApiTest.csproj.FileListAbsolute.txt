@@ -1501,3 +1501,6 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/obj/Debug/net8.0/MRB.WebA.67FA044D.Up2Date
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/obj/Debug/net8.0/MRB.WebApiTest.genruntimeconfig.cache
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/obj/Debug/net8.0/ref/MRB.WebApiTest.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Castle.Core.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Moq.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll

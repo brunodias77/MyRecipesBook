@@ -14,4 +14,6 @@ public interface IUserRepository
     Task<User?> GetByEmailAndPassword(string email, string password);
 
     Task<User> GetById(Guid id);
+
+    Task<User?> GetUserByEmail(string email);
 }

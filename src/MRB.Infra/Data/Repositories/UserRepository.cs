@@ -47,4 +47,9 @@ public class UserRepository : IUserRepository
             .Users
             .FirstAsync(user => user.Id == id);
     }
+    
+    public async Task<User?> GetUserByEmail(string email)
+    {
+        return await _context.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(email));
+    }
 }
