@@ -5,8 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MRB.Domain.Repositories;
 using MRB.Domain.Security;
+using MRB.Domain.Security.Token;
 using MRB.Infra.Data;
 using MRB.Infra.Data.Repositories;
+using MRB.Infra.Security.Tokens.Generator;
+using MRB.Infra.Security.Tokens.Validator;
 
 namespace MRB.Infra.Configurations;
 
@@ -36,17 +39,17 @@ public static class DependencyInjectionExtension
 
     private static void AddToken(IServiceCollection services, IConfigurationManager configuration)
     {
-        // var expirationTimeMinutes = configuration.GetValue<uint>("Settings:Jwt:ExpirationTimeMinutes");
-        // var signingKey = configuration.GetValue<string>("Settings:Jwt:SigninKey");
-        //
-        // services.AddScoped<IAccessTokenGenerator>(option => new JwtTokenGenerator(expirationTimeMinutes, signingKey!));
-        // services.AddScoped<IAccessTokenValidator>(option => new JwtTokenValidator(signingKey!));
+        var expirationTimeMinutes = configuration.GetValue<uint>("Settings:Jwt:ExpirationTimeMinutes");
+        var signingKey = configuration.GetValue<string>("Settings:Jwt:SigninKey");
+
+        services.AddScoped<IAccessTokenGenerator>(option => new JwtTokenGenerator(expirationTimeMinutes, signingKey!));
+        services.AddScoped<IAccessTokenValidator>(option => new JwtTokenValidator(signingKey!));
     }
 
     private static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IUserRepository, UserRepository>();
-        // services.AddScoped<IRecipeRepository, RecipeRepository>();
+        services.AddScoped<IRecipeRepository, RecipeRepository>();
         // services.AddScoped<IUnitOfWork, UnitOfWork>();
     }
 

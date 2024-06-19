@@ -123,6 +123,11 @@
       "MRB.Exceptions/1.0.0": {
         "runtime": {
           "MRB.Exceptions.dll": {}
+        },
+        "resources": {
+          "pt-BR/MRB.Exceptions.resources.dll": {
+            "locale": "pt-BR"
+          }
         }
       }
     }

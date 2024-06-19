@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0544VdEksYrtd/n9w9KYXD26IjQJMMGTXbQ+JClpd9ZE5WwTCOOYCBlRJBi/Z6Lk2no5GuXrvS6IzONnb/eQdA==",
+  "dgSpecHash": "WU5VGCUHQtA3S7b4mDNI7XQQDVptC71zYUY6iCZXdHVqllU1twosmiHEdHeF98kM2A9DH0uDxyPUd29kQ2JOfw==",
   "success": true,
-  "projectFilePath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+  "projectFilePath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
   "expectedPackageFiles": [
-    "/home/bruno-dias/.nuget/packages/bogus/35.5.1/bogus.35.5.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/moq/4.20.70/moq.4.20.70.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "/Users/brunodias/.nuget/packages/bogus/35.5.1/bogus.35.5.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/moq/4.20.70/moq.4.20.70.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,5 +5,8 @@
     &lt;TestId&gt;xUnit::D3017DDA-3CBF-408C-BF39-185310A04817::net8.0::MRB.WebApiTest.Users.GetAll.GetAllUsersIntegrationTest.SUCESSO&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException/@EntryIndexRemoved">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException_005FptBR/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=src_002Fshared_002FMRB_002EExceptions_002FResourceMessagesException_005FptBR/@EntryIndexRemoved">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

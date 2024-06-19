@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "CKqgkDIe8/U+YtjfcDzmDAFzcBBbXUfSQ1onJMfxz52i6Ep4AihTMjXo2vudzfrf7ip1kweZyYulo9dnOyuhCA==",
+  "dgSpecHash": "XZyi4TObPmhe/NU1DiVEcI5LvLRT4pPerbQKmE0W+ys0os3SXA4eX+K3J7pLAfk4pydF7c27HG6K0VUa9uNhKA==",
   "success": true,
-  "projectFilePath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
+  "projectFilePath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/MRB.ValidatorsTest.csproj",
   "expectedPackageFiles": [
-    "/home/bruno-dias/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.codecoverage/17.6.0/microsoft.codecoverage.17.6.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.net.test.sdk/17.6.0/microsoft.net.test.sdk.17.6.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.testplatform.objectmodel/17.6.0/microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.testplatform.testhost/17.6.0/microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/brunodias/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.codecoverage/17.6.0/microsoft.codecoverage.17.6.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.net.test.sdk/17.6.0/microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.testplatform.objectmodel/17.6.0/microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.testplatform.testhost/17.6.0/microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []
 }

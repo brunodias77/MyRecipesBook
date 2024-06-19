@@ -1,6 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using MRB.Domain.Abstractions;
+
 namespace MRB.Domain.Entities;
 
-public class Ingredient
+[Table("Instructions")]
+public class Ingredient : Entity
 {
-    
+    public string Item { get; set; } = string.Empty;
+    public Guid RecipeId { get; set; }
 }

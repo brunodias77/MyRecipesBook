@@ -22,3 +22,15 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/refint/MRB.Communication.dll
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/ref/MRB.Communication.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.deps.json
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Communication.pdb
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfoInputs.cache
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.AssemblyInfo.cs
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CoreCompileInputs.cache
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.sourcelink.json
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/refint/MRB.Communication.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.pdb
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/ref/MRB.Communication.dll

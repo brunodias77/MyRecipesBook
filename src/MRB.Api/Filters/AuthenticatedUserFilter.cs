@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using MRB.Communication.Responses;
 using MRB.Domain.Repositories;
 using MRB.Domain.Security.Token;
+using MRB.Exceptions;
 using MRB.Exceptions.Exceptions;
 
 namespace MRB.Api.Filters;

@@ -22,3 +22,15 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/refint/MRB.Domain.dll
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/ref/MRB.Domain.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/bin/Debug/net8.0/MRB.Domain.deps.json
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/bin/Debug/net8.0/MRB.Domain.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/bin/Debug/net8.0/MRB.Domain.pdb
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.AssemblyInfoInputs.cache
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.AssemblyInfo.cs
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.csproj.CoreCompileInputs.cache
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.sourcelink.json
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/refint/MRB.Domain.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.pdb
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/ref/MRB.Domain.dll
