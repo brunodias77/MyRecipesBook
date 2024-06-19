@@ -50,7 +50,7 @@ public static class DependencyInjectionExtension
     {
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRecipeRepository, RecipeRepository>();
-        // services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
     }
 
     private static void AddFluenteMigrator(IServiceCollection services, IConfigurationManager configuration)

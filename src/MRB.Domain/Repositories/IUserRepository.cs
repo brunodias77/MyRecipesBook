@@ -8,4 +8,6 @@ public interface IUserRepository
 
     Task AddAsync(User user);
     Task<bool> ExistActiveUserWithIdentifier(Guid userId);
+
+    Task<bool> ExistActiveUserWithEmail(string email);
 }

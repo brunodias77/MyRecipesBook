@@ -28,4 +28,9 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.AnyAsync(user => user.Id.Equals(userId) && user.Active);
     }
+    
+    public async Task<bool> ExistActiveUserWithEmail(string email)
+    {
+        return await _context.Users.AnyAsync(user => user.Email.Equals(email) && user.Active);
+    }
 }

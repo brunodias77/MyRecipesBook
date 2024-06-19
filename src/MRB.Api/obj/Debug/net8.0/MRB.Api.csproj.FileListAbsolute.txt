@@ -332,3 +332,4 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/obj/Debug/net8.0/MRB.Api.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/obj/Debug/net8.0/MRB.Api.genruntimeconfig.cache
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/obj/Debug/net8.0/ref/MRB.Api.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll

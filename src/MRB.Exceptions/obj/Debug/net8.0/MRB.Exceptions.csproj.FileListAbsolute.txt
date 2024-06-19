@@ -40,3 +40,9 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/refint/MRB.Exceptions.dll
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/ref/MRB.Exceptions.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.ResourceMessagesException.resources
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.ResourceMessagesException.pt-BR.resources
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/MRB.Exceptions.csproj.GenerateResource.cache
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/pt-BR/MRB.Exceptions.resources.cs
+/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll

@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MRB.Application.Services;
 using Sqids;
 
 namespace MRB.Application.Configurations;
@@ -15,13 +16,13 @@ public static class DependencyInjectionExtension
 
     private static void AddAutoMapper(IServiceCollection services, IConfiguration configuration)
     {
-        // var sqids = new SqidsEncoder<long>(new()
-        // {
-        //     MinLength = 10,
-        //     Alphabet = configuration.GetValue<string>("Settings:IdCryptographyAlphabet")!
-        // });
-        // services.AddScoped(option =>
-        //     new AutoMapper.MapperConfiguration(opt => { opt.AddProfile(new AutoMapping(sqids)); }).CreateMapper());
+        var sqids = new SqidsEncoder<long>(new()
+        {
+            MinLength = 10,
+            Alphabet = configuration.GetValue<string>("Settings:IdCryptographyAlphabet")!
+        });
+        services.AddScoped(option =>
+            new AutoMapper.MapperConfiguration(opt => { opt.AddProfile(new AutoMapping(sqids)); }).CreateMapper());
     }
 
     private static void AddUseCases(IServiceCollection services)
