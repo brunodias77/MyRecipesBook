@@ -10,4 +10,8 @@ public interface IUserRepository
     Task<bool> ExistActiveUserWithIdentifier(Guid userId);
 
     Task<bool> ExistActiveUserWithEmail(string email);
+
+    Task<User?> GetByEmailAndPassword(string email, string password);
+
+    Task<User> GetById(Guid id);
 }

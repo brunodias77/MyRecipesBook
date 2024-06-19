@@ -1,4 +1,3 @@
-using System.Globalization;
 using System.Net;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -10,6 +9,11 @@ namespace MRB.WebApiTest.Users.Register;
 
 public class RegisterUserIntegrationTest : IClassFixture<CustomWebApplicationFactory>
 {
+    public RegisterUserIntegrationTest(CustomWebApplicationFactory factory)
+    {
+        this.httpClient = factory.CreateClient();
+    }
+
     private readonly HttpClient httpClient;
     private readonly string method = "user/signup";
 

@@ -111,6 +111,9 @@
         }
       },
       "MRB.Communication/1.0.0": {
+        "dependencies": {
+          "MRB.Domain": "1.0.0"
+        },
         "runtime": {
           "MRB.Communication.dll": {}
         }

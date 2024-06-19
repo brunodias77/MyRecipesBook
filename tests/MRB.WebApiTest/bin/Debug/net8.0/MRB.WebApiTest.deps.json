@@ -431,6 +431,20 @@
           "lib/net6.0/Bogus.dll": {}
         }
       },
+      "Castle.Core/5.1.1": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {}
+        }
+      },
       "coverlet.collector/6.0.0": {},
       "FirebirdSql.Data.FirebirdClient/10.0.0": {
         "runtime": {
@@ -1622,6 +1636,20 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Moq/4.20.70": {
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {
+            "assemblyVersion": "4.20.70.0",
+            "fileVersion": "4.20.70.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "MySqlConnector/2.3.5": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
@@ -2582,9 +2610,14 @@
       },
       "MRB.CommonTest/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Bogus": "35.5.1",
+          "MRB.Application": "1.0.0",
           "MRB.Communication": "1.0.0",
-          "MRB.Domain": "1.0.0"
+          "MRB.Domain": "1.0.0",
+          "MRB.Infra": "1.0.0",
+          "Moq": "4.20.70",
+          "Sqids": "3.1.0"
         },
         "runtime": {
           "MRB.CommonTest.dll": {}
@@ -2594,6 +2627,9 @@
         }
       },
       "MRB.Communication/1.0.0": {
+        "dependencies": {
+          "MRB.Domain": "1.0.0"
+        },
         "runtime": {
           "MRB.Communication.dll": {}
         },
@@ -2612,6 +2648,11 @@
       "MRB.Exceptions/1.0.0": {
         "runtime": {
           "MRB.Exceptions.dll": {}
+        },
+        "resources": {
+          "pt-BR/MRB.Exceptions.resources.dll": {
+            "locale": "pt-BR"
+          }
         },
         "compile": {
           "MRB.Exceptions.dll": {}
@@ -4485,6 +4526,13 @@
       "path": "bogus/35.5.1",
       "hashPath": "bogus.35.5.1.nupkg.sha512"
     },
+    "Castle.Core/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "path": "castle.core/5.1.1",
+      "hashPath": "castle.core.5.1.1.nupkg.sha512"
+    },
     "coverlet.collector/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5051,6 +5099,13 @@
       "sha512": "sha512-9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
+    "Moq/4.20.70": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4rNnAwdpXJBuxqrOCzCyICXHSImOTRktCgCWXWykuF1qwoIsVvEnR7PjbMk/eLOxWvhmj5Kwt+kDV3RGUYcNwg==",
+      "path": "moq/4.20.70",
+      "hashPath": "moq.4.20.70.nupkg.sha512"
     },
     "MySqlConnector/2.3.5": {
       "type": "package",

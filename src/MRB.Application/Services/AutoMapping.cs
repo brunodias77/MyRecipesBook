@@ -2,6 +2,8 @@ using AutoMapper;
 using MRB.Communication.Requests.Instructions;
 using MRB.Communication.Requests.Recipes.Register;
 using MRB.Communication.Requests.Users;
+using MRB.Communication.Responses.Recipes;
+using MRB.Communication.Responses.Users;
 using MRB.Domain.Entities;
 using Sqids;
 
@@ -36,7 +38,7 @@ public class AutoMapping : Profile
     private void DomainToResponse()
     {
         CreateMap<User, ResponseUserProfileJson>();
-        CreateMap<Recipe, ResponseRegisteredRecipeJson>()
-            .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
+        // CreateMap<Recipe, ResponseRegisteredRecipeJson>()
+        // .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
     }
 }

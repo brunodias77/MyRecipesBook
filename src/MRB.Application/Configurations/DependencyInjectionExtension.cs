@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MRB.Application.Services;
+using MRB.Application.UseCases.Users.Register;
 using Sqids;
 
 namespace MRB.Application.Configurations;
@@ -27,7 +28,7 @@ public static class DependencyInjectionExtension
 
     private static void AddUseCases(IServiceCollection services)
     {
-        // services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+        services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
         // services.AddScoped<ILoginUserUseCase, LoginUserUseCase>();
         // services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
         // services.AddScoped<IUpdateUseCase, UpdateUseCase>();

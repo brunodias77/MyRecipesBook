@@ -1,3 +1,4 @@
+using MRB.Communication.Requests.Instructions;
 using MRB.Domain.Enums;
 
 namespace MRB.Communication.Requests.Recipes.Register;

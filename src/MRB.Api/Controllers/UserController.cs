@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MRB.Api.Attributes;
+using MRB.Application.UseCases.Users.Register;
 using MRB.Communication.Requests.Users;
+using MRB.Communication.Responses.Users;
 using MRB.Domain.Entities;
 using MRB.Domain.Repositories;
 using MRB.Domain.Security;
@@ -27,17 +29,26 @@ public class UserController : ControllerBase
         return Ok(users);
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Register(RequestRegisterUserJson request)
+    [HttpPost("signup")]
+    [ProducesResponseType(typeof(ResponseRegisterUserJson), StatusCodes.Status201Created)]
+    public async Task<IActionResult> Register([FromServices] IRegisterUserUseCase useCase,
+        [FromBody] RequestRegisterUserJson request)
     {
-        var user = new User
-        {
-            Name = request.Name,
-            Email = request.Email,
-            Password = _passwordEncripter.Encrypt(request.Password)
-        };
-
-        await _userRepository.AddAsync(user);
-        return Ok();
+        var result = await useCase.Execute(request);
+        return Created(string.Empty, result);
     }
+
+    // [HttpPost]
+    // public async Task<IActionResult> Register(RequestRegisterUserJson request)
+    // {
+    //     var user = new User
+    //     {
+    //         Name = request.Name,
+    //         Email = request.Email,
+    //         Password = _passwordEncripter.Encrypt(request.Password)
+    //     };
+    //
+    //     await _userRepository.AddAsync(user);
+    //     return Ok();
+    // }
 }
