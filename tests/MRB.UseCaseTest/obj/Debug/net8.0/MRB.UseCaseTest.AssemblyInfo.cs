@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRB.UseCaseTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f78f73e5f6b4d28dec0781a0e927ad0a1cb5a71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c73c71aea39f73d9137bb2314cfb6b680053a17d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRB.UseCaseTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRB.UseCaseTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
