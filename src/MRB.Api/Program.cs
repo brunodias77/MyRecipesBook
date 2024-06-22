@@ -2,7 +2,9 @@ using Microsoft.OpenApi.Models;
 using MRB.Api.Converters;
 using MRB.Api.Filters;
 using MRB.Api.Middlewares;
+using MRB.Api.Tokens;
 using MRB.Application.Configurations;
+using MRB.Domain.Security.Token;
 using MRB.Infra.Configurations;
 using MRB.Infra.Extensions;
 using MRB.Infra.Migrations;
@@ -48,6 +50,8 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication(builder.Configuration);
+builder.Services.AddScoped<ITokenProvider, HttpContextTokenValue>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

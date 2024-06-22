@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using MRB.CommonTest.Entities;
 using MRB.Domain.Entities;
+using MRB.Domain.Security;
 using MRB.Domain.Security.Token;
 using MRB.Infra.Data;
 using MRB.Infra.Security.Tokens.Generator;
@@ -69,16 +70,18 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
                 // Cria um escopo de serviço para interagir com o DbContext
                 using var scope = services.BuildServiceProvider().CreateScope();
                 var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                var passwordEncripter = scope.ServiceProvider.GetRequiredService<IPasswordEncripter>();
 
                 // Garante que o banco de dados em memória está vazio antes de iniciar
                 dbContext.Database.EnsureDeleted();
 
-                StartDataBase(dbContext);
+                StartDataBase(dbContext, passwordEncripter);
             });
     }
 
-    private void StartDataBase(ApplicationDbContext dbContext)
+    private void StartDataBase(ApplicationDbContext dbContext, IPasswordEncripter passwordEncripter)
     {
+        _user.Password = passwordEncripter.Encrypt(_user.Password);
         dbContext.Users.Add(_user);
         dbContext.SaveChanges();
     }
@@ -86,5 +89,6 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
     public string GetName() => _user.Name;
     public string GetEmail() => _user.Email;
     public string GetPassword() => _password;
+    public string GetUserPasword() => _user.Password;
     public Guid GetUserId() => _user.Id;
 }

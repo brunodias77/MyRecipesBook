@@ -1,4 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using MRB.Application.UseCases.Recipes.Register;
+using MRB.Communication.Requests.Recipes.Register;
+using MRB.Communication.Responses;
+using MRB.Communication.Responses.Recipes;
 using MRB.Domain.Repositories;
 
 namespace MRB.Api.Controllers;
@@ -19,5 +23,15 @@ public class RecipeController : ControllerBase
     {
         var result = await _recipeRepository.GetAll();
         return Ok(result);
+    }
+
+    [HttpPost]
+    [ProducesResponseType(typeof(ResponseRegisteredRecipeJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Register([FromServices] IRegisterRecipeUseCase useCase,
+        [FromBody] RequestRegisterRecipeJson request)
+    {
+        var response = await useCase.Execute(request);
+        return Created(string.Empty, response);
     }
 }

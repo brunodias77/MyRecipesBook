@@ -14,6 +14,7 @@ public class LoginUserIntegrationTest : IClassFixture<CustomWebApplicationFactor
         _name = factory.GetName();
         _email = factory.GetEmail();
         _password = factory.GetPassword();
+        _userPassword = factory.GetUserPasword();
         httpClient = factory.CreateClient();
     }
 
@@ -21,6 +22,7 @@ public class LoginUserIntegrationTest : IClassFixture<CustomWebApplicationFactor
     private readonly string _name;
     private readonly string _email;
     private readonly string _password;
+    private readonly string _userPassword;
     private readonly HttpClient httpClient;
 
     [Fact]
@@ -29,7 +31,7 @@ public class LoginUserIntegrationTest : IClassFixture<CustomWebApplicationFactor
         var request = new RequestLoginUserJson()
         {
             Email = _email,
-            Password = _password
+            Password = _userPassword
         };
 
         var response = await httpClient.PostAsJsonAsync(method, request);

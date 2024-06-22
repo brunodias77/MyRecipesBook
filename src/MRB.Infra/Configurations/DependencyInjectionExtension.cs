@@ -6,10 +6,12 @@ using Microsoft.Extensions.DependencyInjection;
 using MRB.Domain.Repositories;
 using MRB.Domain.Security;
 using MRB.Domain.Security.Token;
+using MRB.Domain.Services;
 using MRB.Infra.Data;
 using MRB.Infra.Data.Repositories;
 using MRB.Infra.Security.Tokens.Generator;
 using MRB.Infra.Security.Tokens.Validator;
+using MRB.Infra.Services.LoggedUsers;
 
 namespace MRB.Infra.Configurations;
 
@@ -74,6 +76,6 @@ public static class DependencyInjectionExtension
 
     private static void AddLoggedUser(IServiceCollection services)
     {
-        // services.AddScoped<ILoggedUser, LoggedUser>();
+        services.AddScoped<ILoggedUser, LoggedUser>();
     }
 }

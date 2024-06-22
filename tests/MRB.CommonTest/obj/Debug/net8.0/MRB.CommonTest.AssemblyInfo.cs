@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRB.CommonTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2553eee065119b4867592441898e251245eac88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3e4e682c83be1f43f306ee1dd88e6a11d657c2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRB.CommonTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRB.CommonTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
