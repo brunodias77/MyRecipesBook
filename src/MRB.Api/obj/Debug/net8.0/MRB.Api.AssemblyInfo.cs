@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRB.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdf6b625480feb3c60fb630362d58368853d107f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce466b7905a66629459a36c4abd81f894fa4c2fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRB.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRB.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,13 +11,5 @@ public class DishType : Entity
     [Required] public Guid RecipeId { get; set; }
 
     [ForeignKey("RecipeId")] public Recipe Recipe { get; set; }
-    // public DishType Type { get; set; }
-    //
-    // // Chave estrangeira para a receita
-    // public Guid RecipeId { get; set; }
-    // public Recipe Recipe { get; set; }
-    //
-    // public DishType()
-    // {
-    // }
+
 }

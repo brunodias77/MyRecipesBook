@@ -30,17 +30,23 @@ public class RegisterRecipeUseCase : IRegisterRecipeUseCase
         var loggedUser = _loggedUser.User();
         var recipe = _mapper.Map<Recipe>(request);
         recipe.UserId = loggedUser.Result.Id;
-        var instructions = request.Instructions.OrderBy(i => i.Step).ToList();
-        for (var i = 0; i < instructions.Count; i++)
-        {
-            instructions.ElementAt(i).Step = i + 1;
-        }
-
-        recipe.Instructions = _mapper.Map<IList<Instruction>>(instructions);
-        
         await _recipeRepository.Add(recipe);
-        await _unitOfWork.CommitAsync();
-        return _mapper.Map<ResponseRegisteredRecipeJson>(recipe);
+        return new ResponseRegisteredRecipeJson
+        {
+            Id = recipe.Id,
+            Title = recipe.Title
+        };
+        // var instructions = request.Instructions.OrderBy(i => i.Step).ToList();
+        // for (var i = 0; i < instructions.Count; i++)
+        // {
+        //     instructions.ElementAt(i).Step = i + 1;
+        // }
+        //
+        // recipe.Instructions = _mapper.Map<IList<Instruction>>(instructions);
+        //
+        // await _recipeRepository.Add(recipe);
+        // await _unitOfWork.CommitAsync();
+        // return _mapper.Map<ResponseRegisteredRecipeJson>(recipe);
     }
 
     private static void Validate(RequestRegisterRecipeJson request)

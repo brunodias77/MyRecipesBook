@@ -17,14 +17,5 @@ public class Instruction : Entity
     public Instruction()
     {
     }
-    // public int Step { get; set; }
-    // public string Text { get; set; }
-    //
-    // // Chave estrangeira para a receita
-    // public Guid RecipeId { get; set; }
-    // public Recipe Recipe { get; set; }
-    //
-    // public Instruction()
-    // {
-    // }
+
 }
