@@ -21,6 +21,10 @@ public class RecipeRepository : IRecipeRepository
 
     public async Task<IList<Recipe>> GetAll()
     {
-        return await _context.Recipes.ToListAsync();
+        return await _context.Recipes
+            .Include(r => r.Instructions)
+            .Include(r => r.Ingredients)
+            .Include(r => r.DishTypes)
+            .ToListAsync();
     }
 }
