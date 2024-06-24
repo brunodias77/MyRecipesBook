@@ -29,43 +29,43 @@ public class RecipeController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Register(RequestRegisterRecipeJson request)
     {
-        var recipe = new Recipe
-        {
-            Title = request.Title,
-            CookingTime = request.CookingTime,
-            Difficulty = request.Difficulty,
-            UserId = Guid.NewGuid(), // Ajuste conforme necessário
-            Ingredients = new List<Ingredient>(),
-            Instructions = new List<Instruction>()
-        };
-
-        foreach (var ingredientName in request.Ingredients)
-        {
-            recipe.Ingredients.Add(new Ingredient
-            {
-                Item = ingredientName,
-                RecipeId = recipe.Id
-            });
-        }
-
-        foreach (var instructionRequest in request.Instructions)
-        {
-            recipe.Instructions.Add(new Instruction
-            {
-                Step = instructionRequest.Step,
-                Text = instructionRequest.Text,
-                RecipeId = recipe.Id
-            });
-        }
-
-        // Adicione os tipos de pratos se necessário
-        // foreach (var dishType in request.DishTypes)
+        // var recipe = new Recipe
         // {
-        //     recipe.DishTypes.Add(dishType);
+        //     Title = request.Title,
+        //     CookingTime = request.CookingTime,
+        //     Difficulty = request.Difficulty,
+        //     UserId = Guid.NewGuid(), // Ajuste conforme necessário
+        //     Ingredients = new List<Ingredient>(),
+        //     Instructions = new List<Instruction>()
+        // };
+        //
+        // foreach (var ingredientName in request.Ingredients)
+        // {
+        //     recipe.Ingredients.Add(new Ingredient
+        //     {
+        //         Item = ingredientName,
+        //         RecipeId = recipe.Id
+        //     });
         // }
-
-        await _recipeRepository.Add(recipe);
-
+        //
+        // foreach (var instructionRequest in request.Instructions)
+        // {
+        //     recipe.Instructions.Add(new Instruction
+        //     {
+        //         Step = instructionRequest.Step,
+        //         Text = instructionRequest.Text,
+        //         RecipeId = recipe.Id
+        //     });
+        // }
+        //
+        // // Adicione os tipos de pratos se necessário
+        // // foreach (var dishType in request.DishTypes)
+        // // {
+        // //     recipe.DishTypes.Add(dishType);
+        // // }
+        //
+        // await _recipeRepository.Add(recipe);
+        //
         return Ok();
     }
 
