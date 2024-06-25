@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/bruno-dias/.nuget/packages/": {}
+    "/home/brunodias/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+      "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
       "projectName": "MRB.Domain",
-      "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
-      "packagesPath": "/home/bruno-dias/.nuget/packages/",
-      "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/obj/",
+      "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+      "packagesPath": "/home/brunodias/.nuget/packages/",
+      "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+        "/home/brunodias/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
