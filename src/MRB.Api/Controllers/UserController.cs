@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MRB.Api.Attributes;
 using MRB.Application.UseCases.Users.Login;
+using MRB.Application.UseCases.Users.Profile;
 using MRB.Application.UseCases.Users.Register;
 using MRB.Communication.Requests.Users;
 using MRB.Communication.Responses;
@@ -48,5 +49,14 @@ public class UserController : ControllerBase
     {
         var response = await useCase.Execute(request);
         return Ok(response);
+    }
+
+    [HttpGet("profile")]
+    [ProducesResponseType(typeof(ResponseUserProfileJson), StatusCodes.Status200OK)]
+    [AuthenticatedUser]
+    public async Task<IActionResult> GetUserProfile([FromServices] IGetUserProfileUseCase useCase)
+    {
+        var result = await useCase.Execute();
+        return Ok(result);
     }
 }

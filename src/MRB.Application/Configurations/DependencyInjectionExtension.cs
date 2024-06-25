@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MRB.Application.Services;
 using MRB.Application.UseCases.Recipes.Register;
 using MRB.Application.UseCases.Users.Login;
+using MRB.Application.UseCases.Users.Profile;
 using MRB.Application.UseCases.Users.Register;
 using Sqids;
 
@@ -32,7 +33,7 @@ public static class DependencyInjectionExtension
     {
         services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
         services.AddScoped<ILoginUserUseCase, LoginUserUseCase>();
-        // services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
+        services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
         // services.AddScoped<IUpdateUseCase, UpdateUseCase>();
         services.AddScoped<IRegisterRecipeUseCase, RegisterRecipeUseCase>();
     }

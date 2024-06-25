@@ -32,14 +32,19 @@ public class RegisterRecipeUseCaseTest
     [Fact]
     public async Task ERRO_TITULO_VAZIO()
     {
+        // Arrange
         var (user, _) = UserBuilder.Build();
         var request = RequestRecipeJsonBuilder.Build();
-        request.Title = string.Empty;
+        request.Title = string.Empty; // Título vazio para disparar a validação
         var useCase = CreateUseCase(user);
-        var result = await useCase.Execute(request);
+
+        // Act
         Func<Task> act = async () => { await useCase.Execute(request); };
-        (await act.Should().ThrowAsync<ErrorOnValidationException>()).Where(e =>
-            e.ErrorMessages.Count == 1 && e.ErrorMessages.Contains(ResourceMessagesException.RECIPE_TITLE_EMPTY));
+
+        // Assert
+        var exception = await act.Should().ThrowAsync<ErrorOnValidationException>();
+        exception.Which.ErrorMessages.Should().ContainSingle()
+            .Which.Should().Be(ResourceMessagesException.RECIPE_TITLE_EMPTY);
     }
 
     [Fact]
