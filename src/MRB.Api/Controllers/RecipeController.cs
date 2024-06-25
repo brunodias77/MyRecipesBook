@@ -38,26 +38,4 @@ public class RecipeController : ControllerBase
         var response = await useCase.Execute(request);
         return Created(string.Empty, response);
     }
-
-    // [HttpPost]
-    // public async Task<IActionResult> Register(RequestRegisterRecipeJson request)
-    // {
-    //     // var recipe = new Recipe
-    //     // {
-    //     //     Title = request.Title,
-    //     //     CookingTime = (int?)request.CookingTime,
-    //     //     Difficulty = (int?)request.Difficulty,
-    //     //     UserId = Guid.Parse("850f33b4-8adc-47be-b0b1-3ec8d90b1cd2"), // Substitua pelo UserId real
-    //     //     Ingredients = request.Ingredients.Select(i => new Ingredient { Item = i }).ToList(),
-    //     //     Instructions = request.Instructions.Select(i => new Instruction { Step = i.Step, Text = i.Text }).ToList(),
-    //     //     DishTypes = request.DishTypes.Select(d => new DishType { Type = (int)d }).ToList()
-    //     // };
-    //
-    //     // var recipe = _mapper.Map<Recipe>(request);
-    //     // recipe.UserId = Guid.Parse("850f33b4-8adc-47be-b0b1-3ec8d90b1cd2");
-    //     //
-    //     // await _recipeRepository.Add(recipe);
-    //     //
-    //     // return Ok(recipe);
-    // }
 }
