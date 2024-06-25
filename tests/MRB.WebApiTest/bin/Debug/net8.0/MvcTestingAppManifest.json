@@ -1,9 +1,9 @@
 {
-  "MRB.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Api",
-  "MRB.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Application",
-  "MRB.CommonTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/tests\/MRB.CommonTest",
-  "MRB.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Communication",
-  "MRB.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Domain",
-  "MRB.Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Exceptions",
-  "MRB.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/brunodias\/Documents\/Programacao\/Codigos\/C#\/MyRecipesBook\/src\/MRB.Infra"
+  "MRB.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Api",
+  "MRB.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Application",
+  "MRB.CommonTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/tests\/MRB.CommonTest",
+  "MRB.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Communication",
+  "MRB.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Domain",
+  "MRB.Exceptions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Exceptions",
+  "MRB.Infra, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/bruno-dias\/Documentos\/Programação\/codigos\/C#\/MyRecipesBook\/src\/MRB.Infra"
 }

@@ -3,6 +3,7 @@ using MRB.Api.Attributes;
 using MRB.Application.UseCases.Users.Login;
 using MRB.Application.UseCases.Users.Profile;
 using MRB.Application.UseCases.Users.Register;
+using MRB.Application.UseCases.Users.Update;
 using MRB.Communication.Requests.Users;
 using MRB.Communication.Responses;
 using MRB.Communication.Responses.Users;
@@ -58,5 +59,16 @@ public class UserController : ControllerBase
     {
         var result = await useCase.Execute();
         return Ok(result);
+    }
+
+    [HttpPut]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+    [AuthenticatedUser]
+    public async Task<IActionResult> Update([FromServices] IUpdateUserUseCase useCase,
+        [FromBody] RequestUpdateUserJson request)
+    {
+        await useCase.Execute(request);
+        return NoContent();
     }
 }

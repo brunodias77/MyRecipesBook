@@ -5,6 +5,7 @@ using MRB.Application.UseCases.Recipes.Register;
 using MRB.Application.UseCases.Users.Login;
 using MRB.Application.UseCases.Users.Profile;
 using MRB.Application.UseCases.Users.Register;
+using MRB.Application.UseCases.Users.Update;
 using Sqids;
 
 namespace MRB.Application.Configurations;
@@ -34,7 +35,7 @@ public static class DependencyInjectionExtension
         services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
         services.AddScoped<ILoginUserUseCase, LoginUserUseCase>();
         services.AddScoped<IGetUserProfileUseCase, GetUserProfileUseCase>();
-        // services.AddScoped<IUpdateUseCase, UpdateUseCase>();
+        services.AddScoped<IUpdateUserUseCase, UpdateUserUseCase>();
         services.AddScoped<IRegisterRecipeUseCase, RegisterRecipeUseCase>();
     }
 

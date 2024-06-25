@@ -52,4 +52,7 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(email));
     }
+    
+    public void Update(User user) => _context.Users.Update(user);
+
 }

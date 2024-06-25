@@ -1504,3 +1504,6 @@
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Castle.Core.dll
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Moq.dll
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Castle.Core.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/Moq.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
