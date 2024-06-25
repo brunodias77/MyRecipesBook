@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MRB.WebApiTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1cfada2076ec1567e2f51e53f3254946055a625")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b7920786d0e3684d27fd2140f051d9a51965e3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MRB.WebApiTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MRB.WebApiTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

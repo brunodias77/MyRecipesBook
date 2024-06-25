@@ -1,6 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using MRB.Application.UseCases.Recipes.Filter;
 using MRB.Application.UseCases.Recipes.Register;
+using MRB.Communication.Requests.Recipes.Filter;
 using MRB.Communication.Requests.Recipes.Register;
 using MRB.Communication.Responses;
 using MRB.Communication.Responses.Recipes;
@@ -37,5 +39,16 @@ public class RecipeController : ControllerBase
     {
         var response = await useCase.Execute(request);
         return Created(string.Empty, response);
+    }
+
+    [HttpPost("filter")]
+    [ProducesResponseType(typeof(ResponseRecipeJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> Filter([FromServices] IFilterRecipeUseCase useCase,
+        [FromBody] RequestFilterRecipeJson request)
+    {
+        var response = await useCase.Execute(request);
+        if (response.Recipes.Any()) return Ok(response);
+        return NoContent();
     }
 }
