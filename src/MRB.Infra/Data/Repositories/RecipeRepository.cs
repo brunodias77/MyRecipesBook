@@ -33,41 +33,31 @@ public class RecipeRepository : IRecipeRepository
 
     public async Task<IList<Recipe>> Filter(User user, FilterRecipesDto filters)
     {
+        // return await _context.Recipes.Where(r => r.UserId == user.Id).ToListAsync();        // return await _context.Recipes
+
         // Inicia a query com receitas ativas e do usuário especificado
-        var query = _context.Recipes.AsNoTracking().Where(recipe => recipe.Active && recipe.UserId == user.Id);
+        var query = _context.Recipes.AsNoTracking()
+            .Where(recipe => recipe.Active && recipe.UserId == user.Id);
+
+        // Inclui os ingredientes na query
+        query = query.Include(r => r.Ingredients);
+
+        query = query.Include(r => r.Instructions);
+
+        // // Filtra por título da receita ou ingredientes, se especificado
+        if (!string.IsNullOrWhiteSpace(filters.RecipeTitle_Ingredient))
+        {
+            query = query.Where(r => r.Title.Contains(filters.RecipeTitle_Ingredient) ||
+                                     r.Ingredients.Any(i => i.Item.Contains(filters.RecipeTitle_Ingredient)));
+        }
 
         // Filtra por dificuldades, se especificado
-        if (filters.Difficulties.Any())
+        if (filters.Difficulties != null && filters.Difficulties.Any())
         {
-            query = query.Where(recipe =>
-                recipe.Difficulty.HasValue && filters.Difficulties.Contains((Difficulty)recipe.Difficulty.Value));
+            query = query.Where(recipe => filters.Difficulties.Contains((Difficulty)recipe.Difficulty));
         }
 
-        // Filtra por tempos de cozimento, se especificado
-        if (filters.CookingTimes.Any())
-        {
-            query = query.Where(
-                recipe => recipe.CookingTime.HasValue &&
-                          filters.CookingTimes.Contains((CookingTime)recipe.CookingTime.Value));
-        }
-
-        // Filtra por tipos de pratos, se especificado
-        if (filters.DishTypes.Any())
-        {
-            query = query.Where(
-                recipe => recipe.DishTypes.Any(dishType =>
-                    filters.DishTypes.Contains((Domain.Enums.DishType)dishType.Type)));
-        }
-
-        // Filtra por título ou ingrediente, se especificado
-        if (filters.RecipeTitle_Ingredient.NotEmpty())
-        {
-            query = query.Where(recipe =>
-                recipe.Title.Contains(filters.RecipeTitle_Ingredient) || recipe.Ingredients.Any(ingredient =>
-                    ingredient.Item.Contains(filters.RecipeTitle_Ingredient)));
-        }
-
-        // Executa a query e retorna a lista de receitas que atendem aos critérios de filtro
+        // // Retorna a lista de receitas filtradas
         return await query.ToListAsync();
     }
 }

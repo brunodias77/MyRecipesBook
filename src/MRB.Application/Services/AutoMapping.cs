@@ -39,34 +39,49 @@ public class AutoMapping : Profile
             .ForMember(dest => dest.DishTypes,
                 opt => opt.MapFrom(src => src.DishTypes.Select(d => new DishType { Type = (int)d })));
     }
-    // // Configuração de mapeamento de RequestRegisterRecipeJson para Recipe
-    // CreateMap<RequestRegisterRecipeJson, Recipe>()
-    //     .ForMember(dest => dest.Instructions,
-    //         opt => opt.Ignore()) // Ignora o mapeamento da propriedade Instructions
-    //     .ForMember(dest => dest.Ingredients,
-    //         opt => opt.MapFrom(source => source.Ingredients.Distinct())) // Mapeia Ingredients, aplicando Distinct
-    //     .ForMember(dest => dest.DishTypes,
-    //         opt => opt.MapFrom(source => source.DishTypes.Distinct())); // Mapeia DishTypes, aplicando Distinct
-    //
-    // // Configuração de mapeamento de string para Ingredient
-    // CreateMap<string, Ingredient>()
-    //     .ForMember(dest => dest.Item,
-    //         opt => opt.MapFrom(source => source)); // Mapeia string para a propriedade Item de Ingredient
-    //
-    // // Configuração de mapeamento de DishType (enum) para DishType (entidade)
-    // CreateMap<MRB.Domain.Enums.DishType, MRB.Domain.Entities.DishType>()
-    //     .ForMember(dest => dest.Type,
-    //         opt => opt.MapFrom(source =>
-    //             source)); // Mapeia DishType (enum) para a propriedade Type de DishType (entidade)
-    //
-    // // Configuração de mapeamento de RequestInstructionsJson para Instruction
-    // CreateMap<RequestInstructionsJson, Instruction>();
+
 
     private void DomainToResponse()
     {
         CreateMap<User, ResponseUserProfileJson>();
+        CreateMap<Recipe, ResponseRegisteredRecipeJson>()
+            .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
         // CreateMap<Recipe, ResponseRegisteredRecipeJson>()
-        //     .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
-        // A linha acima mapeia o Id de Recipe para ResponseRegisteredRecipeJson usando o encoder Sqids para codificar o Id.
+        //     .ForMember(dest => dest.Id, config => config.MapFrom(source => ConvertGuidToLong(source.Id)));
+    }
+
+    public static long ConvertGuidToLong(Guid guid)
+    {
+        // Converte o Guid para um array de bytes
+        byte[] bytes = guid.ToByteArray();
+
+        // Usa os primeiros 8 bytes do Guid para criar um long
+        long longValue = BitConverter.ToInt64(bytes, 0);
+
+        return longValue;
     }
 }
+
+
+// // Configuração de mapeamento de RequestRegisterRecipeJson para Recipe
+// CreateMap<RequestRegisterRecipeJson, Recipe>()
+//     .ForMember(dest => dest.Instructions,
+//         opt => opt.Ignore()) // Ignora o mapeamento da propriedade Instructions
+//     .ForMember(dest => dest.Ingredients,
+//         opt => opt.MapFrom(source => source.Ingredients.Distinct())) // Mapeia Ingredients, aplicando Distinct
+//     .ForMember(dest => dest.DishTypes,
+//         opt => opt.MapFrom(source => source.DishTypes.Distinct())); // Mapeia DishTypes, aplicando Distinct
+//
+// // Configuração de mapeamento de string para Ingredient
+// CreateMap<string, Ingredient>()
+//     .ForMember(dest => dest.Item,
+//         opt => opt.MapFrom(source => source)); // Mapeia string para a propriedade Item de Ingredient
+//
+// // Configuração de mapeamento de DishType (enum) para DishType (entidade)
+// CreateMap<MRB.Domain.Enums.DishType, MRB.Domain.Entities.DishType>()
+//     .ForMember(dest => dest.Type,
+//         opt => opt.MapFrom(source =>
+//             source)); // Mapeia DishType (enum) para a propriedade Type de DishType (entidade)
+//
+// // Configuração de mapeamento de RequestInstructionsJson para Instruction
+// CreateMap<RequestInstructionsJson, Instruction>();

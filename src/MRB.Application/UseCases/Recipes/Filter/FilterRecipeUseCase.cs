@@ -34,6 +34,16 @@ public class FilterRecipeUseCase : IFilterRecipeUseCase
             DishTypes = request.DishTypes.Distinct().Select(c => (DishType)c).ToList()
         };
         var recipes = await _recipeRepository.Filter(loggedUser, filters);
+        var allIngredients = recipes.SelectMany(recipe => recipe.Ingredients).ToArray();
+        var allItems = recipes.SelectMany(recipe => recipe.Ingredients.Select(ingredient => ingredient.Item)).ToArray();
+        var amountIngredients = string.Join(", ", allItems.Select(item => item));
+
+        var shortRecipeJson = new ResponseShortRecipeJson
+        {
+            Id = recipes[0].Id,
+            AmountIngredients = amountIngredients,
+            Title = recipes[0].Title
+        };
 
         return new ResponseRecipeJson
         {
