@@ -46,8 +46,6 @@ public class AutoMapping : Profile
         CreateMap<User, ResponseUserProfileJson>();
         CreateMap<Recipe, ResponseRegisteredRecipeJson>()
             .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
-        // CreateMap<Recipe, ResponseRegisteredRecipeJson>()
-        //     .ForMember(dest => dest.Id, config => config.MapFrom(source => ConvertGuidToLong(source.Id)));
     }
 
     public static long ConvertGuidToLong(Guid guid)

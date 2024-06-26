@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "seP934f5EXofunQ9+emQKLSkHrl8tDa11szjVeH//vj/9kv01uWKcj1EA2FUJ3eF7TnrJ9E72wDWBjbvkhDfsQ==",
+  "dgSpecHash": "u5fynZvQK4aZHQQF6C2fo3Cx49kfvopO54otiRETE6MJifuTOhFd/HTSn40e8aOgA49DRAvcp21TFiYw7AoSew==",
   "success": true,
   "projectFilePath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/MRB.UseCaseTest.csproj",
   "expectedPackageFiles": [

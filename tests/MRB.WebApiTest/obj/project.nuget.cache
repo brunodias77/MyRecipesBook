@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XOfZXR3jze4DJqEnhTwaBhEOGtZz6CQ8Nu6EyoJ3mc+hyFCxy8wN8n7N9J6EZkzIX6q+gmGY8DVDZ12x894Gyw==",
+  "dgSpecHash": "eBGVmlzeQ2+NM4BL4vjq0b7Np+QM07k2B5jpHF7hICZMjs23ME996Q3Kg7g/GxQzq3K/C7taUnGMXFUX6lhXcw==",
   "success": true,
   "projectFilePath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj",
   "expectedPackageFiles": [
