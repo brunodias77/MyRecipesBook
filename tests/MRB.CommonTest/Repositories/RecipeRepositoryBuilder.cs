@@ -1,13 +1,27 @@
 using Moq;
+using MRB.Domain.Dtos;
+using MRB.Domain.Entities;
 using MRB.Domain.Repositories;
 
 namespace MRB.CommonTest.Repositories;
 
 public class RecipeRepositoryBuilder
 {
-    public static IRecipeRepository Build()
+    private readonly Mock<IRecipeRepository> _repository;
+
+    public RecipeRepositoryBuilder()
     {
-        var mock = new Mock<IRecipeRepository>();
-        return mock.Object;
+        _repository = new Mock<IRecipeRepository>();
+    }
+
+    public RecipeRepositoryBuilder Filter(User user, IList<Recipe> recipes)
+    {
+        _repository.Setup(repository => repository.Filter(user, It.IsAny<FilterRecipesDto>())).ReturnsAsync(recipes);
+        return this;
+    }
+
+    public IRecipeRepository Build()
+    {
+        return _repository.Object;
     }
 }
