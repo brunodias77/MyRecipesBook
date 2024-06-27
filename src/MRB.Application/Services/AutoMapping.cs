@@ -44,19 +44,9 @@ public class AutoMapping : Profile
     private void DomainToResponse()
     {
         CreateMap<User, ResponseUserProfileJson>();
-        CreateMap<Recipe, ResponseRegisteredRecipeJson>()
-            .ForMember(dest => dest.Id, config => config.MapFrom(source => _idEncoder.Encode(source.Id)));
-    }
-
-    public static long ConvertGuidToLong(Guid guid)
-    {
-        // Converte o Guid para um array de bytes
-        byte[] bytes = guid.ToByteArray();
-
-        // Usa os primeiros 8 bytes do Guid para criar um long
-        long longValue = BitConverter.ToInt64(bytes, 0);
-
-        return longValue;
+        CreateMap<Recipe, ResponseRegisteredRecipeJson>();
+        CreateMap<Recipe, ResponseShortRecipeJson>()
+            .ForMember(dest => dest.AmountIngredients, opt => opt.MapFrom(src => string.Join(", ", src.Ingredients.Select(i => i.Item))));
     }
 }
 

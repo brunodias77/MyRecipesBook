@@ -4,6 +4,7 @@ using MRB.Domain.Entities;
 using MRB.Domain.Enums;
 using MRB.Domain.Extensions;
 using MRB.Domain.Repositories;
+using DishType = MRB.Domain.Enums.DishType;
 
 namespace MRB.Infra.Data.Repositories;
 
@@ -55,6 +56,19 @@ public class RecipeRepository : IRecipeRepository
         if (filters.Difficulties != null && filters.Difficulties.Any())
         {
             query = query.Where(recipe => filters.Difficulties.Contains((Difficulty)recipe.Difficulty));
+        }
+
+        // Filtra por Tempo de cozimento.
+        if (filters.CookingTimes != null && filters.CookingTimes.Any())
+        {
+            query = query.Where(recipe => filters.CookingTimes.Contains((CookingTime)recipe.CookingTime));
+        }
+
+        //Filtra por tipo de prato.
+        if (filters.DishTypes != null && filters.DishTypes.Any())
+        {
+            query = query.Where(recipe =>
+                recipe.DishTypes.Any(dishType => filters.DishTypes.Contains((MRB.Domain.Enums.DishType)dishType.Type)));
         }
 
         // // Retorna a lista de receitas filtradas
