@@ -6,6 +6,8 @@ using MRB.CommonTest.Mapper;
 using MRB.CommonTest.Repositories;
 using MRB.CommonTest.Requests.Recipes;
 using MRB.Domain.Entities;
+using MRB.Exceptions;
+using MRB.Exceptions.Exceptions;
 using Xunit;
 
 namespace MRB.UseCaseTest.Recipes.Filter;
@@ -23,6 +25,20 @@ public class FilterRecipeUseCaseTest
         result.Should().NotBeNull();
         result.Recipes.Should().NotBeNullOrEmpty();
         result.Recipes.Should().HaveCount(recipes.Count);
+    }
+
+    [Fact]
+    public async Task ERRO_TEMPO_DE_COZIMENTO_INVALIDO()
+    {
+        (var user, _) = UserBuilder.Build();
+        var recipes = RecipeBuilder.Collection(user);
+        var request = RequestFilterRecipeJsonBuilder.Build();
+        request.CookingTimes.Add((MRB.Domain.Enums.CookingTime)1000);
+        var useCase = CreateUseCase(user, recipes);
+        Func<Task> act = async () => { await useCase.Execute(request); };
+        (await act.Should().ThrowAsync<ErrorOnValidationException>()).Where(e =>
+            e.ErrorMessages.Count == 1 &&
+            e.ErrorMessages.Contains(ResourceMessagesException.COOKING_TIME_NOT_SUPPORTED));
     }
 
     private static FilterRecipeUseCase CreateUseCase(User user, IList<Recipe> recipes)
