@@ -74,4 +74,14 @@ public class RecipeRepository : IRecipeRepository
         // // Retorna a lista de receitas filtradas
         return await query.ToListAsync();
     }
+
+    public async Task<Recipe> GetById(User user, Guid recipeId)
+    {
+        return await _context.Recipes
+            .AsNoTracking()
+            .Include(recipe => recipe.Ingredients)
+            .Include(recipe => recipe.Instructions)
+            .Include(recipe => recipe.DishTypes)
+            .FirstOrDefaultAsync(recipe => recipe.Active && recipe.Id == recipeId && recipe.UserId == user.Id);
+    }
 }

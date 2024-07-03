@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MRB.Application.Services;
 using MRB.Application.UseCases.Recipes.Filter;
+using MRB.Application.UseCases.Recipes.GetById;
 using MRB.Application.UseCases.Recipes.Register;
 using MRB.Application.UseCases.Users.Login;
 using MRB.Application.UseCases.Users.Profile;
@@ -39,6 +40,7 @@ public static class DependencyInjectionExtension
         services.AddScoped<IUpdateUserUseCase, UpdateUserUseCase>();
         services.AddScoped<IRegisterRecipeUseCase, RegisterRecipeUseCase>();
         services.AddScoped<IFilterRecipeUseCase, FilterRecipeUseCase>();
+        services.AddScoped<IGetRecipeByIdUseCase, GetRecipeByIdUseCase>();
     }
 
     private static void AddPasswordEncrypter(IServiceCollection services, IConfiguration configuration)

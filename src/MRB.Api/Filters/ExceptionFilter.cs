@@ -33,6 +33,11 @@ public class ExceptionFilter : IExceptionFilter
             context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             context.Result = new BadRequestObjectResult(new ResponseErrorJson(exception.ErrorMessages));
         }
+        else if (context.Exception is NotFoundExecption)
+        {
+            context.HttpContext.Response.StatusCode = StatusCodes.Status404NotFound;
+            context.Result = new NotFoundObjectResult(new ResponseErrorJson(context.Exception.Message));
+        }
     }
 
     private void ThrowUnknowException(ExceptionContext context)

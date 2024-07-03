@@ -20,21 +20,44 @@ public class FilterRecipeIntegrationTest : MyRecipesClassFixture
     private string _recipeTitle;
     private Difficulty _recipeDifficultyLevel;
     private CookingTime _recipeCookingTime;
-    private DishType _recipeDishType;
+    private IList<MRB.Domain.Enums.DishType> _recipeDishType;
 
 
     public FilterRecipeIntegrationTest(CustomWebApplicationFactory factory) : base(factory)
     {
+        _userId = factory.GetUserId();
+        _recipeTitle = factory.GetRecipeTitle();
+        _recipeCookingTime = factory.GetRecipeCookingTime();
+        _recipeDifficultyLevel = factory.GetRecipeDifficulty();
+        _recipeDishType = factory.GetRecipeDishTypes();
     }
 
     [Fact]
     public async Task SUCESSO()
     {
+        var request = new RequestFilterRecipeJson
+        {
+            CookingTimes = [(CookingTime)_recipeCookingTime],
+            Difficulties = [(Difficulty)_recipeDifficultyLevel],
+            DishTypes = _recipeDishType,
+            RecipeTitle_Ingredient = _recipeTitle
+        };
+        var token = JwtTokenGeneratorBuilder.Build().Generate(_userId);
+        var response = await DoPost(METHOD, request, token);
+        response.StatusCode.Should().Be(HttpStatusCode.OK);
+        await using var responseBody = await response.Content.ReadAsStreamAsync();
+        var responseData = await JsonDocument.ParseAsync(responseBody);
+        responseData.RootElement.GetProperty("recipes").EnumerateArray().Should().NotBeNullOrEmpty();
     }
 
     [Fact]
     public async Task SUCESSO_SEM_CONTEUDO()
     {
+        var request = RequestFilterRecipeJsonBuilder.Build();
+        request.RecipeTitle_Ingredient = "recipeDontExist";
+        var token = JwtTokenGeneratorBuilder.Build().Generate(_userId);
+        var response = await DoPost(METHOD, request, token);
+        response.StatusCode.Should().Be(HttpStatusCode.NoContent);
     }
 
     [Theory]

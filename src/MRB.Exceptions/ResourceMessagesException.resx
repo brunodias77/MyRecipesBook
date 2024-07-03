@@ -84,4 +84,7 @@
     <data name="TWO_OR_MORE_INSTRUCTIONS_SAME_ORDER" xml:space="preserve">
         <value>Two instructions with the same step number.</value>
     </data>
+    <data name="RECIPE_NOT_FOUND" xml:space="preserve">
+        <value>Recipe not found</value>
+    </data>
 </root>

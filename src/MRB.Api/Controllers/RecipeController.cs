@@ -1,6 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MRB.Application.UseCases.Recipes.Filter;
+using MRB.Application.UseCases.Recipes.GetById;
 using MRB.Application.UseCases.Recipes.Register;
 using MRB.Communication.Requests.Recipes.Filter;
 using MRB.Communication.Requests.Recipes.Register;
@@ -50,5 +51,14 @@ public class RecipeController : ControllerBase
         var response = await useCase.Execute(request);
         if (response.Recipes.Any()) return Ok(response);
         return NoContent();
+    }
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(ResponseRecipeJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetById([FromServices] IGetRecipeByIdUseCase useCase, [FromRoute] Guid id)
+    {
+        var response = await useCase.Execute(id);
+        return Ok(null);
     }
 }

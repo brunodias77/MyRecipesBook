@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using MRB.CommonTest.Entities;
 using MRB.Domain.Entities;
+using MRB.Domain.Enums;
 using MRB.Domain.Security;
 using MRB.Domain.Security.Token;
 using MRB.Infra.Data;
@@ -17,10 +18,12 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
     public CustomWebApplicationFactory()
     {
         (_user, _password) = UserBuilder.Build();
+        _recipe = RecipeBuilder.Build(_user);
     }
 
     private User _user;
     private string _password;
+    private Recipe _recipe;
 
     // Sobrescreve o método para configurar o host da aplicação web
     protected override void ConfigureWebHost(IWebHostBuilder builder)
@@ -83,8 +86,15 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
     {
         _user.Password = passwordEncripter.Encrypt(_user.Password);
         dbContext.Users.Add(_user);
+        dbContext.Recipes.Add(_recipe);
         dbContext.SaveChanges();
     }
+
+    public string GetRecipeTitle() => _recipe.Title;
+    public Difficulty GetRecipeDifficulty() => (Difficulty)_recipe.Difficulty!.Value;
+
+    public CookingTime GetRecipeCookingTime() => (CookingTime)_recipe.CookingTime!.Value;
+    public IList<MRB.Domain.Enums.DishType> GetRecipeDishTypes() => _recipe.DishTypes.Select(d => (MRB.Domain.Enums.DishType)d.Type).ToList();
 
     public string GetName() => _user.Name;
     public string GetEmail() => _user.Email;
