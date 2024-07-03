@@ -19,5 +19,10 @@ public class MyRecipeBookRecipeIdBinder : IModelBinder
         {
             return Task.CompletedTask;
         }
+
+        // Aqui seria pra tranformar o id (string) da requisicao em id (long) que precisamos para o useCase.
+        var id = value;
+        bindingContext.Result = ModelBindingResult.Success(id);
+        return Task.CompletedTask;
     }
 }

@@ -28,6 +28,14 @@ public static class DependencyInjectionExtension
             MinLength = 10,
             Alphabet = configuration.GetValue<string>("Settings:IdCryptographyAlphabet")!
         });
+
+        // Se for usar o o sqids com autoMapper
+        // services.AddScoped(option => new AutoMapper.MapperConfiguration(autoMapperOptions =>
+        // {
+        //     sqids = option.GetService<SqidsEncoder<long>>();
+        //     autoMapperOptions.AddProfile(new AutoMapping(sqids));
+        // }));
+
         services.AddScoped(option =>
             new AutoMapper.MapperConfiguration(opt => { opt.AddProfile(new AutoMapping(sqids)); }).CreateMapper());
     }
@@ -48,5 +56,15 @@ public static class DependencyInjectionExtension
         //var additionalKey = configuration.GetSection("Settings:Password:AdditionalKey").Value;
         // var additionalKey = configuration.GetValue<string>("Settings:Password:AdditionalKey");
         // services.AddScoped(options => new PasswordEncripter(additionalKey));
+    }
+
+    private static void AddIdEncoder(IServiceCollection services, IConfiguration configuration)
+    {
+        var sqids = new SqidsEncoder<long>(new()
+        {
+            MinLength = 10,
+            Alphabet = configuration.GetValue<string>("Settings:IdCryptographyAlphabet")!
+        });
+        services.AddSingleton(sqids);
     }
 }
