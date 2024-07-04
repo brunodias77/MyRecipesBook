@@ -84,4 +84,10 @@ public class RecipeRepository : IRecipeRepository
             .Include(recipe => recipe.DishTypes)
             .FirstOrDefaultAsync(recipe => recipe.Active && recipe.Id == recipeId && recipe.UserId == user.Id);
     }
+
+    public async Task Delete(Guid recipeId)
+    {
+        var recipe = await _context.Recipes.FindAsync(recipeId);
+        _context.Recipes.Remove(recipe);
+    }
 }

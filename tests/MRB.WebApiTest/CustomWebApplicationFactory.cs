@@ -90,6 +90,7 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
         dbContext.SaveChanges();
     }
 
+    public Guid GetRecipeId() => _recipe.Id;
     public string GetRecipeTitle() => _recipe.Title;
     public Difficulty GetRecipeDifficulty() => (Difficulty)_recipe.Difficulty!.Value;
 

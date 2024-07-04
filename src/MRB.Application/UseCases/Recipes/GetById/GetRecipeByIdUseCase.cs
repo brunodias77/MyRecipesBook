@@ -20,12 +20,12 @@ public class GetRecipeByIdUseCase : IGetRecipeByIdUseCase
     private readonly ILoggedUser _loggedUser;
     private readonly IRecipeRepository _recipeRepository;
 
-    public async Task<ResponseRecipeJson> Execute(Guid recipeId)
+    public async Task<ResponseCompleteRecipeJson> Execute(Guid recipeId)
     {
         var loggedUser = await _loggedUser.User();
         var recipe = await _recipeRepository.GetById(loggedUser, recipeId);
 
         if (recipe is null) throw new NotFoundExecption(ResourceMessagesException.RECIPE_NOT_FOUND);
-        return _mapper.Map<ResponseRecipeJson>(recipe);
+        return _mapper.Map<ResponseCompleteRecipeJson>(recipe);
     }
 }

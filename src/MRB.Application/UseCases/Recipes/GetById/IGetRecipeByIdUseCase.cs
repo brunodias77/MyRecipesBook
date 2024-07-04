@@ -5,5 +5,5 @@ namespace MRB.Application.UseCases.Recipes.GetById;
 
 public interface IGetRecipeByIdUseCase
 {
-    Task<ResponseRecipeJson> Execute(Guid recipeId);
+    Task<ResponseCompleteRecipeJson> Execute(Guid recipeId);
 }

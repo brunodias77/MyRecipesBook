@@ -1,6 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using MRB.Api.Attributes;
 using MRB.Api.Binders;
+using MRB.Application.UseCases.Recipes.Delete;
 using MRB.Application.UseCases.Recipes.Filter;
 using MRB.Application.UseCases.Recipes.GetById;
 using MRB.Application.UseCases.Recipes.Register;
@@ -15,6 +17,7 @@ namespace MRB.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[AuthenticatedUser]
 public class RecipeController : ControllerBase
 {
     public RecipeController(IRecipeRepository recipeRepository, IMapper mapper)
@@ -57,10 +60,29 @@ public class RecipeController : ControllerBase
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(ResponseRecipeJson), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> GetById([FromServices] IGetRecipeByIdUseCase useCase,
-        [FromRoute] [ModelBinder(typeof(MyRecipeBookRecipeIdBinder))] Guid id)
+    public async Task<IActionResult> GetById([FromServices] IGetRecipeByIdUseCase useCase, [FromRoute] Guid id)
     {
         var response = await useCase.Execute(id);
-        return Ok(null);
+        return Ok(response);
     }
+
+    [HttpDelete]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Delete([FromServices] IDeleteRecipeUseCase useCase, [FromRoute] Guid id)
+    {
+        await useCase.Execute(id);
+        return NoContent();
+    }
+
+    // [HttpGet("{id}")]
+    // [ProducesResponseType(typeof(ResponseRecipeJson), StatusCodes.Status200OK)]
+    // [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    // public async Task<IActionResult> GetById([FromServices] IGetRecipeByIdUseCase useCase,
+    //     [FromRoute] [ModelBinder(typeof(MyRecipeBookRecipeIdBinder))] Guid id) -> 
+    // {
+    //     var response = await useCase.Execute(id);
+    //     return Ok(null);
+    // }
 }
