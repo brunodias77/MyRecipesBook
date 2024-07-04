@@ -23,7 +23,7 @@ public class GetRecipeByIdUseCase : IGetRecipeByIdUseCase
     public async Task<ResponseCompleteRecipeJson> Execute(Guid recipeId)
     {
         var loggedUser = await _loggedUser.User();
-        var recipe = await _recipeRepository.GetById(loggedUser, recipeId);
+        var recipe = await _recipeRepository.GetById_AsNoTracking(loggedUser, recipeId);
 
         if (recipe is null) throw new NotFoundExecption(ResourceMessagesException.RECIPE_NOT_FOUND);
         return _mapper.Map<ResponseCompleteRecipeJson>(recipe);

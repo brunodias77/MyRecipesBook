@@ -1,5 +1,6 @@
 using AutoMapper;
 using MRB.Communication.Requests.Recipes.Register;
+using MRB.Communication.Requests.Recipes.Update;
 using MRB.Communication.Requests.Users;
 using MRB.Communication.Responses.Recipes;
 using MRB.Communication.Responses.Users;
@@ -29,6 +30,19 @@ public class AutoMapping : Profile
             .ForMember(user => user.Password, opt => opt.Ignore()); // Ignora o mapeamento da propriedade Password
 
         CreateMap<RequestRegisterRecipeJson, Recipe>()
+            // Mapeamento para a coleção de Ingredients
+            .ForMember(dest => dest.Ingredients,
+                opt => opt.MapFrom(src => src.Ingredients.Select(i => new Ingredient { Item = i })))
+            // Mapeamento para a coleção de Instructions
+            .ForMember(dest => dest.Instructions,
+                opt => opt.MapFrom(
+                    src => src.Instructions.Select(i => new Instruction { Step = i.Step, Text = i.Text })))
+            // Mapeamento para a coleção de DishTypes
+            .ForMember(dest => dest.DishTypes,
+                opt => opt.MapFrom(src =>
+                    src.DishTypes.Select(d => new MRB.Domain.Entities.DishType { Type = (int)d })));
+        
+        CreateMap<RequestUpdateRecipeJson, Recipe>()
             // Mapeamento para a coleção de Ingredients
             .ForMember(dest => dest.Ingredients,
                 opt => opt.MapFrom(src => src.Ingredients.Select(i => new Ingredient { Item = i })))

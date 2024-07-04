@@ -40,7 +40,7 @@ public class GetRecipeByIdUseCaseTest
     {
         var mapper = MapperBuilder.Build();
         var loggedUser = LoggedUserBuilder.Build(user);
-        var repository = new RecipeRepositoryBuilder().GetById(user, recipe).Build();
+        var repository = new RecipeRepositoryBuilder().GetById_AsNoTracking(user, recipe).Build();
         return new GetRecipeByIdUseCase(mapper, loggedUser, repository);
     }
 }

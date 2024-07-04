@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using MRB.Domain.Dtos;
 using MRB.Domain.Entities;
 using MRB.Domain.Enums;
@@ -77,11 +78,14 @@ public class RecipeRepository : IRecipeRepository
 
     public async Task<Recipe> GetById(User user, Guid recipeId)
     {
-        return await _context.Recipes
+        return await GetFullRecipe()
+            .FirstOrDefaultAsync(recipe => recipe.Active && recipe.Id == recipeId && recipe.UserId == user.Id);
+    }
+
+    public async Task<Recipe> GetById_AsNoTracking(User user, Guid recipeId)
+    {
+        return await GetFullRecipe()
             .AsNoTracking()
-            .Include(recipe => recipe.Ingredients)
-            .Include(recipe => recipe.Instructions)
-            .Include(recipe => recipe.DishTypes)
             .FirstOrDefaultAsync(recipe => recipe.Active && recipe.Id == recipeId && recipe.UserId == user.Id);
     }
 
@@ -89,5 +93,18 @@ public class RecipeRepository : IRecipeRepository
     {
         var recipe = await _context.Recipes.FindAsync(recipeId);
         _context.Recipes.Remove(recipe);
+    }
+
+    public void Update(Recipe recipe)
+    {
+        _context.Recipes.Update(recipe);
+    }
+
+    private IIncludableQueryable<Recipe, ICollection<Domain.Entities.DishType>> GetFullRecipe()
+    {
+        return _context.Recipes
+            .Include(recipe => recipe.Ingredients)
+            .Include(recipe => recipe.Instructions)
+            .Include(recipe => recipe.DishTypes);
     }
 }

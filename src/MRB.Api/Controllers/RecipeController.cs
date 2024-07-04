@@ -6,6 +6,7 @@ using MRB.Application.UseCases.Recipes.Delete;
 using MRB.Application.UseCases.Recipes.Filter;
 using MRB.Application.UseCases.Recipes.GetById;
 using MRB.Application.UseCases.Recipes.Register;
+using MRB.Application.UseCases.Recipes.Update;
 using MRB.Communication.Requests.Recipes.Filter;
 using MRB.Communication.Requests.Recipes.Register;
 using MRB.Communication.Responses;
@@ -73,6 +74,20 @@ public class RecipeController : ControllerBase
     public async Task<IActionResult> Delete([FromServices] IDeleteRecipeUseCase useCase, [FromRoute] Guid id)
     {
         await useCase.Execute(id);
+        return NoContent();
+    }
+
+    [HttpPut]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Update(
+        [FromServices] IUpdateRecipeUseCase useCase,
+        [FromRoute] Guid id,
+        [FromBody] RequestRegisterRecipeJson request
+    )
+    {
+        await useCase.Execute(id, request);
         return NoContent();
     }
 
