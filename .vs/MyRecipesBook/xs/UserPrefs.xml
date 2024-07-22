@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{DBB3F214-21AB-419B-9CDD-04450FD9986A}|https">
+  <MonoDevelop.Ide.ItemProperties.src.backend.MRB.Api PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyRecipesBook" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="backend" expanded="True">
+                <Node name="MRB.Application" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
