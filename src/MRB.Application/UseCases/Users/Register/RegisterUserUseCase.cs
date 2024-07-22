@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation;
 using MRB.Communication.Requests.Users;
 using MRB.Communication.Responses;
 using MRB.Communication.Responses.Users;
@@ -50,7 +51,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     private async Task Validate(RequestRegisterUserJson request)
     {
         var validator = new RegisterUserValidator();
-        var result = validator.Validate(request);
+        var result = await validator.ValidateAsync(request);
         var emailExists = await _userRepository.ExistActiveUserWithEmail(request.Email);
         if (emailExists)
         {

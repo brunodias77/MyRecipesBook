@@ -34,3 +34,9 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/refint/MRB.Domain.dll
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/ref/MRB.Domain.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.Services.OpenAI.ResourceOpenAI.resources
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.Services.OpenAI.ResourceOpenAI.pt-BR.resources
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/MRB.Domain.csproj.GenerateResource.cache
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/pt-BR/MRB.Domain.resources.cs
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/Debug/net8.0/pt-BR/MRB.Domain.resources.dll

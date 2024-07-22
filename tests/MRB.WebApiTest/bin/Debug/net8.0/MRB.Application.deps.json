@@ -121,6 +121,11 @@
       "MRB.Domain/1.0.0": {
         "runtime": {
           "MRB.Domain.dll": {}
+        },
+        "resources": {
+          "pt-BR/MRB.Domain.resources.dll": {
+            "locale": "pt-BR"
+          }
         }
       },
       "MRB.Exceptions/1.0.0": {

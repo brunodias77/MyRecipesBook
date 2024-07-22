@@ -1,4 +1,5 @@
 using AutoMapper;
+using MRB.Communication.Requests.Instructions;
 using MRB.Communication.Requests.Recipes.Register;
 using MRB.Communication.Requests.Recipes.Update;
 using MRB.Communication.Requests.Users;
@@ -41,7 +42,7 @@ public class AutoMapping : Profile
             .ForMember(dest => dest.DishTypes,
                 opt => opt.MapFrom(src =>
                     src.DishTypes.Select(d => new MRB.Domain.Entities.DishType { Type = (int)d })));
-        
+
         CreateMap<RequestUpdateRecipeJson, Recipe>()
             // Mapeamento para a coleção de Ingredients
             .ForMember(dest => dest.Ingredients,
@@ -54,6 +55,7 @@ public class AutoMapping : Profile
             .ForMember(dest => dest.DishTypes,
                 opt => opt.MapFrom(src =>
                     src.DishTypes.Select(d => new MRB.Domain.Entities.DishType { Type = (int)d })));
+        CreateMap<RequestInstructionsJson, Instruction>();
     }
 
 
@@ -62,7 +64,8 @@ public class AutoMapping : Profile
         CreateMap<User, ResponseUserProfileJson>();
         CreateMap<Recipe, ResponseRegisteredRecipeJson>();
         CreateMap<Recipe, ResponseShortRecipeJson>()
-            .ForMember(dest => dest.AmountIngredients, opt => opt.MapFrom(src => string.Join(", ", src.Ingredients.Select(i => i.Item))));
+            .ForMember(dest => dest.AmountIngredients,
+                opt => opt.MapFrom(src => string.Join(", ", src.Ingredients.Select(i => i.Item))));
         CreateMap<Recipe, ResponseCompleteRecipeJson>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id.ToString()))
             .ForMember(dest => dest.CookingTime,
@@ -83,27 +86,3 @@ public class AutoMapping : Profile
             .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Text));
     }
 }
-
-
-// // Configuração de mapeamento de RequestRegisterRecipeJson para Recipe
-// CreateMap<RequestRegisterRecipeJson, Recipe>()
-//     .ForMember(dest => dest.Instructions,
-//         opt => opt.Ignore()) // Ignora o mapeamento da propriedade Instructions
-//     .ForMember(dest => dest.Ingredients,
-//         opt => opt.MapFrom(source => source.Ingredients.Distinct())) // Mapeia Ingredients, aplicando Distinct
-//     .ForMember(dest => dest.DishTypes,
-//         opt => opt.MapFrom(source => source.DishTypes.Distinct())); // Mapeia DishTypes, aplicando Distinct
-//
-// // Configuração de mapeamento de string para Ingredient
-// CreateMap<string, Ingredient>()
-//     .ForMember(dest => dest.Item,
-//         opt => opt.MapFrom(source => source)); // Mapeia string para a propriedade Item de Ingredient
-//
-// // Configuração de mapeamento de DishType (enum) para DishType (entidade)
-// CreateMap<MRB.Domain.Enums.DishType, MRB.Domain.Entities.DishType>()
-//     .ForMember(dest => dest.Type,
-//         opt => opt.MapFrom(source =>
-//             source)); // Mapeia DishType (enum) para a propriedade Type de DishType (entidade)
-//
-// // Configuração de mapeamento de RequestInstructionsJson para Instruction
-// CreateMap<RequestInstructionsJson, Instruction>();

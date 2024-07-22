@@ -595,3 +595,6 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/obj/Debug/net8.0/MRB.ValidatorsTest.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/obj/Debug/net8.0/MRB.ValidatorsTest.genruntimeconfig.cache
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/obj/Debug/net8.0/ref/MRB.ValidatorsTest.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/bin/Debug/net8.0/OpenAI_API.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.ValidatorsTest/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll

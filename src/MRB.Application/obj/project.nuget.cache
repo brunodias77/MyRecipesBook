@@ -1,18 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "KSok+Z6k3mskL0uk9ZDsOELFmOtnUMFmWyL3z0+bGqAmB76GFvbGWnlytOmNREKp5+Hzi7ADBcEKax+B/+C7uQ==",
+  "dgSpecHash": "l2xyxTV+qyrpCo4JkiUJnQ+i06NvF6KHQr3cGmOJStr1g34kQZnAq0p6nqL6bXE/3r3hWTnwiABTECVZfacUnQ==",
   "success": true,
-  "projectFilePath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
+  "projectFilePath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
   "expectedPackageFiles": [
-    "/home/bruno-dias/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.configuration.binder/8.0.1/microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/bruno-dias/.nuget/packages/sqids/3.1.0/sqids.3.1.0.nupkg.sha512"
+    "/Users/brunodias/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/file.typechecker/4.1.1/file.typechecker.4.1.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.configuration.binder/8.0.1/microsoft.extensions.configuration.binder.8.0.1.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/brunodias/.nuget/packages/sqids/3.1.0/sqids.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }

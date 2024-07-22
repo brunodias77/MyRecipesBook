@@ -1,14 +1,19 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MRB.Application.Services;
+using MRB.Application.UseCases.Dashboard.GetRecipes;
 using MRB.Application.UseCases.Recipes.Delete;
 using MRB.Application.UseCases.Recipes.Filter;
+using MRB.Application.UseCases.Recipes.GenerateChatGpt;
 using MRB.Application.UseCases.Recipes.GetById;
+using MRB.Application.UseCases.Recipes.Image;
 using MRB.Application.UseCases.Recipes.Register;
+using MRB.Application.UseCases.Recipes.Update;
 using MRB.Application.UseCases.Users.Login;
 using MRB.Application.UseCases.Users.Profile;
 using MRB.Application.UseCases.Users.Register;
 using MRB.Application.UseCases.Users.Update;
+using MyRecipeBook.Application.UseCases.Recipe.Image;
 using Sqids;
 
 namespace MRB.Application.Configurations;
@@ -51,6 +56,10 @@ public static class DependencyInjectionExtension
         services.AddScoped<IFilterRecipeUseCase, FilterRecipeUseCase>();
         services.AddScoped<IGetRecipeByIdUseCase, GetRecipeByIdUseCase>();
         services.AddScoped<IDeleteRecipeUseCase, DeleteRecipeUseCase>();
+        services.AddScoped<IUpdateRecipeUseCase, UpdateRecipeUseCase>();
+        services.AddScoped<IGetDashboardUseCase, GetDashboardUseCase>();
+        services.AddScoped<IGenerateRecipeUseCase, GenerateRecipeUseCase>();
+        services.AddScoped<IAddUpdateImageCoverUseCase, AddUpdateImageCoverUseCase>();
     }
 
     private static void AddPasswordEncrypter(IServiceCollection services, IConfiguration configuration)

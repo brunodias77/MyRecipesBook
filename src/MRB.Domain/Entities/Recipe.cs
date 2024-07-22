@@ -13,6 +13,8 @@ public class Recipe : Entity
     public int? CookingTime { get; set; }
 
     public int? Difficulty { get; set; }
+    
+    public string? ImageIdentifier { get; set; }
 
     [Required] public Guid UserId { get; set; }
 

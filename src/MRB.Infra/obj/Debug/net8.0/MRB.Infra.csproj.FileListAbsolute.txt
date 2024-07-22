@@ -46,3 +46,4 @@
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/refint/MRB.Infra.dll
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/MRB.Infra.pdb
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/Debug/net8.0/ref/MRB.Infra.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll

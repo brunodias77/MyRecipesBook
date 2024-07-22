@@ -100,6 +100,12 @@ public class RecipeRepository : IRecipeRepository
         _context.Recipes.Update(recipe);
     }
 
+    public async Task<IList<Recipe>> GetForDashboard(User user)
+    {
+        return await _context.Recipes.AsNoTracking().Include(c => c.Ingredients)
+            .Where(r => r.Active && r.UserId == user.Id).OrderByDescending(r => r.CreatedOn).Take(5).ToListAsync();
+    }
+
     private IIncludableQueryable<Recipe, ICollection<Domain.Entities.DishType>> GetFullRecipe()
     {
         return _context.Recipes
