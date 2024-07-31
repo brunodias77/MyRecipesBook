@@ -124,6 +124,14 @@
           }
         }
       },
+      "File.TypeChecker/4.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/FileTypeChecker.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "FirebirdSql.Data.FirebirdClient/10.0.0": {
         "runtime": {
           "lib/net7.0/FirebirdSql.Data.FirebirdClient.dll": {
@@ -893,6 +901,7 @@
       "MRB.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "File.TypeChecker": "4.1.1",
           "FluentValidation": "11.9.2",
           "MRB.Communication": "1.0.0",
           "MRB.Domain": "1.0.0",
@@ -1015,6 +1024,13 @@
       "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
+    },
+    "File.TypeChecker/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tHYymbqp6JysSzwGJakP+TDvE6gkjgSlit24uIXrXKa8vye52+9mYYTD5GLxFpcNSOQQAWwaD5NkGEAP0S6knQ==",
+      "path": "file.typechecker/4.1.1",
+      "hashPath": "file.typechecker.4.1.1.nupkg.sha512"
     },
     "FirebirdSql.Data.FirebirdClient/10.0.0": {
       "type": "package",

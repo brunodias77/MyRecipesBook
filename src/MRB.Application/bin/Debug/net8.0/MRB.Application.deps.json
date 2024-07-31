@@ -9,6 +9,7 @@
       "MRB.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "File.TypeChecker": "4.1.1",
           "FluentValidation": "11.9.2",
           "MRB.Communication": "1.0.0",
           "MRB.Domain": "1.0.0",
@@ -29,6 +30,14 @@
           "lib/net6.0/AutoMapper.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.0"
+          }
+        }
+      },
+      "File.TypeChecker/4.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/FileTypeChecker.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -120,6 +129,13 @@
       "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
       "path": "automapper/13.0.1",
       "hashPath": "automapper.13.0.1.nupkg.sha512"
+    },
+    "File.TypeChecker/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tHYymbqp6JysSzwGJakP+TDvE6gkjgSlit24uIXrXKa8vye52+9mYYTD5GLxFpcNSOQQAWwaD5NkGEAP0S6knQ==",
+      "path": "file.typechecker/4.1.1",
+      "hashPath": "file.typechecker.4.1.1.nupkg.sha512"
     },
     "FluentValidation/11.9.2": {
       "type": "package",

@@ -62,3 +62,4 @@
 /home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
