@@ -71,7 +71,7 @@ namespace MyRecipeBook.Application.UseCases.Recipe.Image
                 await _unitOfWork.Commit();
             }
 
-            // Faz o upload da imagem para o serviço de armazenamento
+            // Faz o upload da imagem para o serviço de armazenamento no azure
             await _blobStorageService.Upload(loggedUser, fileStream, recipe.ImageIdentifier);
         }
     }
