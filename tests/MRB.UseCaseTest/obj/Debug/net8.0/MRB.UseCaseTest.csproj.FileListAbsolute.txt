@@ -589,3 +589,6 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/MRB.Exceptions.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/MRB.Infra.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/OpenAI_API.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.UseCaseTest/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll

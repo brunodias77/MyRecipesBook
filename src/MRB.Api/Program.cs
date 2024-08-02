@@ -25,6 +25,7 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
+    options.OperationFilter<IdsFilter>();
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = @"JWT Authorization header using the Bearer scheme.
@@ -53,6 +54,15 @@ builder.Services.AddSwaggerGen(options =>
             new List<string>()
         }
     });
+
+    options.CustomSchemaIds(type =>
+    {
+        if (type == typeof(MRB.Domain.Entities.DishType))
+            return "DishType";
+        if (type == typeof(MRB.Domain.Enums.DishType))
+            return "DishTypeEnum";
+        return type.FullName; // Usa o nome completo do tipo como identificador de esquema por padrão
+    });
 });
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -79,7 +89,7 @@ app.MapControllers();
 
 MigrateDatabase();
 
-app.Run();
+await app.RunAsync();
 
 
 void MigrateDatabase()

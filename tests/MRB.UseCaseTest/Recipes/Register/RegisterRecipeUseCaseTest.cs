@@ -64,7 +64,8 @@ public class RegisterRecipeUseCaseTest
         var mapper = MapperBuilder.Build();
         var unitOfWork = UnitOfWorkBuilder.Build();
         var loggedUser = LoggedUserBuilder.Build(user);
-        var repository = RecipeRepositoryBuilder.Build();
+        var recipeRepositoryBuilder = new RecipeRepositoryBuilder();
+        var repository = recipeRepositoryBuilder.Build();
         return new RegisterRecipeUseCase(repository, loggedUser, unitOfWork, mapper);
     }
 }

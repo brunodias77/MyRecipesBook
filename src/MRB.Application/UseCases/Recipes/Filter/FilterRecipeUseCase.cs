@@ -35,9 +35,11 @@ public class FilterRecipeUseCase : IFilterRecipeUseCase
         };
         var recipes = await _recipeRepository.Filter(loggedUser, filters);
 
+        var responseRecipes = _mapper.Map<List<ResponseShortRecipeJson>>(recipes);
+
         return new ResponseRecipeJson
         {
-            Recipes = _mapper.Map<List<ResponseShortRecipeJson>>(recipes)
+            Recipes = responseRecipes
         };
     }
 

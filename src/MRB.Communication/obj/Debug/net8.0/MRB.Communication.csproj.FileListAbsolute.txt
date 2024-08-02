@@ -46,3 +46,5 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/MRB.Domain.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.AssemblyReference.cache
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CopyComplete
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
+/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll

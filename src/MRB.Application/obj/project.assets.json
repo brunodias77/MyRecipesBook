@@ -18,6 +18,19 @@
           }
         }
       },
+      "File.TypeChecker/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FileTypeChecker.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FileTypeChecker.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "FluentValidation/11.9.2": {
         "type": "package",
         "compile": {
@@ -200,6 +213,21 @@
         "icon.png",
         "lib/net6.0/AutoMapper.dll",
         "lib/net6.0/AutoMapper.xml"
+      ]
+    },
+    "File.TypeChecker/4.1.1": {
+      "sha512": "tHYymbqp6JysSzwGJakP+TDvE6gkjgSlit24uIXrXKa8vye52+9mYYTD5GLxFpcNSOQQAWwaD5NkGEAP0S6knQ==",
+      "type": "package",
+      "path": "file.typechecker/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "file.typechecker.4.1.1.nupkg.sha512",
+        "file.typechecker.nuspec",
+        "images/FileTypeCheckerLogo-150.png",
+        "lib/netstandard2.0/FileTypeChecker.dll",
+        "lib/netstandard2.0/FileTypeChecker.pdb"
       ]
     },
     "FluentValidation/11.9.2": {
@@ -444,6 +472,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
+      "File.TypeChecker >= 4.1.1",
       "FluentValidation >= 11.9.2",
       "MRB.Communication >= 1.0.0",
       "MRB.Domain >= 1.0.0",
@@ -454,19 +483,19 @@
     ]
   },
   "packageFolders": {
-    "/home/brunodias/.nuget/packages/": {}
+    "/Users/brunodias/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
+      "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
       "projectName": "MRB.Application",
-      "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
-      "packagesPath": "/home/brunodias/.nuget/packages/",
-      "outputPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/obj/",
+      "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
+      "packagesPath": "/Users/brunodias/.nuget/packages/",
+      "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/brunodias/.nuget/NuGet/NuGet.Config"
+        "/Users/brunodias/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -478,14 +507,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
-              "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
+            "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+              "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
             },
-            "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
-              "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+            "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+              "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
             },
-            "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
-              "projectPath": "/home/brunodias/Documentos/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
+            "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
+              "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
             }
           }
         }
@@ -494,6 +523,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -503,6 +537,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[13.0.1, )"
+          },
+          "File.TypeChecker": {
+            "target": "Package",
+            "version": "[4.1.1, )"
           },
           "FluentValidation": {
             "target": "Package",
@@ -533,11 +571,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -176,5 +176,35 @@ namespace MRB.Exceptions {
                 return ResourceManager.GetString("USER_WITHOUT_PERMISSION_ACCESS_RESOURCE", resourceCulture);
             }
         }
+        
+        public static string RECIPE_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("RECIPE_NOT_FOUND", resourceCulture);
+            }
+        }
+        
+        public static string INVALID_NUMBER_INGREDIENTS {
+            get {
+                return ResourceManager.GetString("INVALID_NUMBER_INGREDIENTS", resourceCulture);
+            }
+        }
+        
+        public static string DUPLICATED_INGREDIENTS_IN_LIST {
+            get {
+                return ResourceManager.GetString("DUPLICATED_INGREDIENTS_IN_LIST", resourceCulture);
+            }
+        }
+        
+        public static string INGREDIENT_NOT_FOLLOWING_PATTERN {
+            get {
+                return ResourceManager.GetString("INGREDIENT_NOT_FOLLOWING_PATTERN", resourceCulture);
+            }
+        }
+        
+        public static string ONLY_IMAGES_ACCEPTED {
+            get {
+                return ResourceManager.GetString("ONLY_IMAGES_ACCEPTED", resourceCulture);
+            }
+        }
     }
 }

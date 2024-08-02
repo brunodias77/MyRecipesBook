@@ -11,5 +11,4 @@ public class DishType : Entity
     [Required] public Guid RecipeId { get; set; }
 
     [ForeignKey("RecipeId")] public Recipe Recipe { get; set; }
-
 }

@@ -73,3 +73,4 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Infra.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/MRB.Exceptions.pdb
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/pt-BR/MRB.Exceptions.resources.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
