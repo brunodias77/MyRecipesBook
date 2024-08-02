@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj": {}
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj": {}
   },
   "projects": {
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj",
         "projectName": "MRB.Api",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,17 +26,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj"
               }
             }
           }
@@ -45,6 +45,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,21 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
         "projectName": "MRB.Application",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -101,14 +106,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj"
               }
             }
           }
@@ -117,6 +122,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -167,21 +177,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
         "projectName": "MRB.Communication",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -193,8 +203,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
               }
             }
           }
@@ -203,6 +213,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -224,21 +239,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
         "projectName": "MRB.Domain",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -256,6 +271,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -277,21 +297,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
         "projectName": "MRB.Exceptions",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/MRB.Exceptions.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Exceptions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -309,6 +329,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -330,21 +355,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj",
         "projectName": "MRB.Infra",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -356,8 +381,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
               }
             }
           }
@@ -366,6 +391,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -433,21 +463,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
         "projectName": "MRB.CommonTest",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -459,17 +489,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Application/MRB.Application.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/MRB.Communication.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Domain/MRB.Domain.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Infra/MRB.Infra.csproj"
               }
             }
           }
@@ -478,6 +508,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -517,21 +552,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj": {
+    "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj",
+        "projectUniqueName": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj",
         "projectName": "MRB.WebApiTest",
-        "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj",
-        "packagesPath": "/home/bruno-dias/.nuget/packages/",
-        "outputPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/obj/",
+        "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/MRB.WebApiTest.csproj",
+        "packagesPath": "/Users/brunodias/.nuget/packages/",
+        "outputPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.WebApiTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno-dias/.nuget/NuGet/NuGet.Config"
+          "/Users/brunodias/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -543,11 +578,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Api/MRB.Api.csproj"
               },
-              "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {
-                "projectPath": "/home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj"
+              "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj": {
+                "projectPath": "/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/tests/MRB.CommonTest/MRB.CommonTest.csproj"
               }
             }
           }
@@ -556,6 +591,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -611,7 +651,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
