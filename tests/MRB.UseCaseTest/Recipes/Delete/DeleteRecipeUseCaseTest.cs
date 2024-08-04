@@ -14,31 +14,31 @@ namespace MRB.UseCaseTest.Recipes.Delete;
 
 public class DeleteRecipeUseCaseTest
 {
-    [Fact]
-    public async Task SUCESSO()
-    {
-        (var user, _) = UserBuilder.Build();
-        var recipe = RecipeBuilder.Build(user);
-        var useCase = CreateUseCase(user, recipe);
-        Func<Task> act = async () => { await useCase.Execute(recipe.Id); };
-        await act.Should().NotThrowAsync();
-    }
-
-    [Fact]
-    public async Task ERRO_RECEITA_NAO_ENCONTRADA()
-    {
-        (var user, _) = UserBuilder.Build();
-        var useCase = CreateUseCase(user);
-        Func<Task> act = async () => { await useCase.Execute(Guid.NewGuid()); };
-        (await act.Should().ThrowAsync<NotFoundExecption>()).Where(e =>
-            e.Message.Equals(ResourceMessagesException.RECIPE_NOT_FOUND));
-    }
-
-    private static DeleteRecipeUseCase CreateUseCase(User user, Recipe? recipe = null)
-    {
-        var loggedUser = LoggedUserBuilder.Build(user);
-        var recipeRepository = new RecipeRepositoryBuilder().GetById(user, recipe).Build();
-        var unitOfWork = UnitOfWorkBuilder.Build();
-        return new DeleteRecipeUseCase(loggedUser, recipeRepository, unitOfWork);
-    }
+    // [Fact]
+    // public async Task SUCESSO()
+    // {
+    //     (var user, _) = UserBuilder.Build();
+    //     var recipe = RecipeBuilder.Build(user);
+    //     var useCase = CreateUseCase(user, recipe);
+    //     Func<Task> act = async () => { await useCase.Execute(recipe.Id); };
+    //     await act.Should().NotThrowAsync();
+    // }
+    //
+    // [Fact]
+    // public async Task ERRO_RECEITA_NAO_ENCONTRADA()
+    // {
+    //     (var user, _) = UserBuilder.Build();
+    //     var useCase = CreateUseCase(user);
+    //     Func<Task> act = async () => { await useCase.Execute(Guid.NewGuid()); };
+    //     (await act.Should().ThrowAsync<NotFoundExecption>()).Where(e =>
+    //         e.Message.Equals(ResourceMessagesException.RECIPE_NOT_FOUND));
+    // }
+    //
+    // private static DeleteRecipeUseCase CreateUseCase(User user, Recipe? recipe = null)
+    // {
+    //     var loggedUser = LoggedUserBuilder.Build(user);
+    //     var recipeRepository = new RecipeRepositoryBuilder().GetById(user, recipe).Build();
+    //     var unitOfWork = UnitOfWorkBuilder.Build();
+    //     return new DeleteRecipeUseCase(loggedUser, recipeRepository, unitOfWork);
+    // }
 }

@@ -48,3 +48,9 @@
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/obj/Debug/net8.0/MRB.Communication.csproj.CopyComplete
 /Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
 /home/bruno-dias/Documentos/Programação/codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/pt-BR/MRB.Domain.resources.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/Microsoft.Net.Http.Headers.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/brunodias/Documents/Programacao/Codigos/C#/MyRecipesBook/src/MRB.Communication/bin/Debug/net8.0/Microsoft.Extensions.Features.dll

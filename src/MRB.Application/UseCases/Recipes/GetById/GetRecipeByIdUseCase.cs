@@ -17,6 +17,7 @@ public class GetRecipeByIdUseCase : IGetRecipeByIdUseCase
         _mapper = mapper;
         _loggedUser = loggedUser;
         _recipeRepository = recipeRepository;
+        _blobStorageService = blobStorageService;
     }
 
     private readonly IMapper _mapper;
@@ -34,6 +35,7 @@ public class GetRecipeByIdUseCase : IGetRecipeByIdUseCase
         if (recipe.ImageIdentifier.NotEmpty())
         {
             var url = await _blobStorageService.GetFileUrl(loggedUser, recipe.ImageIdentifier);
+
             response.ImageUrl = url;
         }
 
