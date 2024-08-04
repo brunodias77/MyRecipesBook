@@ -1,6 +1,8 @@
 using Azure.Storage.Blobs;
+using Azure.Storage.Sas;
 using MRB.Domain.Entities;
 using MRB.Domain.Services.Storage;
+using MRB.Domain.ValueObjects;
 
 namespace MRB.Infra.Services.Storage;
 
@@ -13,14 +15,44 @@ public class AzureStorageService : IBlobStorageService
         _blobServiceClient = blobServiceClient;
     }
 
-    public Task Upload(User user, Stream file, string fileName)
+    public async Task Upload(User user, Stream file, string fileName)
     {
-        throw new NotImplementedException();
+        var container = _blobServiceClient.GetBlobContainerClient(user.Id.ToString());
+        await container.CreateIfNotExistsAsync();
+
+        var blobClient = container.GetBlobClient(fileName);
+
+        await blobClient.UploadAsync(file, overwrite: true);
     }
 
-    public Task<string> GetFileUrl(User user, string fileName)
+    public async Task<string> GetFileUrl(User user, string fileName)
     {
-        throw new NotImplementedException();
+        var containerName = user.Id.ToString();
+
+        var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
+        var exist = await containerClient.ExistsAsync();
+        if (!exist.Value)
+            return string.Empty;
+
+        var blobClient = containerClient.GetBlobClient(fileName);
+        exist = await blobClient.ExistsAsync();
+        if (exist.Value)
+        {
+            var sasBuilder = new BlobSasBuilder
+            {
+                BlobContainerName = containerName,
+                BlobName = fileName,
+                Resource = "b",
+                ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(MyRecipesBookRuleConstants
+                    .MAXIMUM_IMAGE_URL_LIFETIME_IN_MINUTES),
+            };
+
+            sasBuilder.SetPermissions(BlobSasPermissions.Read);
+
+            return blobClient.GenerateSasUri(sasBuilder).ToString();
+        }
+
+        return string.Empty;
     }
 
     public Task Delete(User user, string fileName)
